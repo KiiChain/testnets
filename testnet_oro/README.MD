@@ -38,7 +38,7 @@ Persistent peer:
 
 - 64 GB RAM
 - 1 TB NVME SSD
-- 16 Cores (modern CPU's)
+- 16 Cores x86_64
 
 #### Bash Script
 
