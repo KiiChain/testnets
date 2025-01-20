@@ -1,0 +1,20 @@
+{
+    "owner_roles_code_id": 5,
+    "owner_roles_address": "kii1sthrn5ep8ls5vzz8f9gp89khhmedahhdqd244dh9uqzk3hx2pzrsa2sy0y",
+    "agent_roles_code_id": 6,
+    "agent_roles_address": "kii1sr06m8yqg0wzqqyqvzvp5t07dj4nevx9u8qc7j4qa72qu8e3ct8qw6rdsk",
+    "trusted_issuers_code_id": 7,
+    "trusted_issuers_address": "kii1w27ekqvvtzfanfxnkw4jx2f8gdfeqwd3drkee3e64xat6phwjg0sagzqmq",
+    "claim_topics_code_id": 8,
+    "claim_topics_address": "kii1vhjnzk9ly03dugffvzfcwgry4dgc8x0sv0nqqtfxj3ajn7rn5ghq62agx0",
+    "on_chain_id_code_id": 9,
+    "on_chain_id_address": "kii1dk9c86h7gmvuaq89cv72cjhq4c97r2wgl5gyfruv6shquwspalgqrrk8nw",
+    "compliance_registry_code_id": 10,
+    "compliance_registry_address": "kii153e2w8u77h4ytrhgry846k5t8n9uea8xqesl66elqgls0lqwsz0qpe27cj",
+    "compliance_claims_code_id": 11,
+    "compliance_claims_address": "kii1gnpgscdagzl8sfhpv64ex2ahuqg7fkhky6d06krgyt30lfdym78qr8evsu",
+    "compliance_country_restriction_code_id": 12,
+    "compliance_country_restriction_address": "kii16yzagwlqrzjkjlnaecam5fwvtzgae5zujtcch7y2uf6q9fyksncqewjsxy",
+    "cw20_base_code_id": 14,
+    "cw20_base_address": "kii1lxp2mwpskymsm4aptq2l3pxlcflqg0qer3e3pnhkuql20phejmdq8tswhc"
+}
