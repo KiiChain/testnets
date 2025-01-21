@@ -12,7 +12,7 @@ NODE_KEY_FILE=${2:-"$HOME/node_key.json"}
 NODE_HOME=~/.kiichain3
 NODE_MONIKER=testnet_oro
 SERVICE_NAME=kiichain3
-SERVICE_VERSION="v1.2.0"
+SERVICE_VERSION="v1.3.0"
 # ***
 
 # Binary
