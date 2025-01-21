@@ -20,12 +20,12 @@ CHAIN_BINARY='kiichaind'
 CHAIN_ID=kiichain3
 
 # Persistent peers and RPC endpoints
-PERSISTENT_PEERS="42355192eb77b71edbaa7e03f38e335849993ca0@p2p.uno.sentry.testnet.v3.kiivalidator.com,f3232ca5248aeb38af1d99542316d3c784dbf6f2@p2p.dos.sentry.testnet.v3.kiivalidator.com"
+PERSISTENT_PEERS="5b6aa55124c0fd28e47d7da091a69973964a9fe1@p2p.uno.sentry.testnet.v3.kiivalidator.com,5e6b283c8879e8d1b0866bda20949f9886aff967@p2p.dos.sentry.testnet.v3.kiivalidator.com"
 PRIMARY_ENDPOINT=https://rpc.uno.sentry.testnet.v3.kiivalidator.com
 SECONDARY_ENDPOINT=https://rpc.dos.sentry.testnet.v3.kiivalidator.com
 
 # The genesis for the chain
-GENESIS_URL=https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/main/testnet_oro/genesis.json
+GENESIS_URL=https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/master/testnet_oro/genesis.json
 
 # Install wget, git and jq
 sudo apt update
@@ -48,7 +48,7 @@ echo "Installing Kiichain3..."
 cd $HOME
 mkdir -p $HOME/go/bin
 rm -rf kiichain3
-git clone https://github.com/KiiChain/kiichain3.git
+git clone https://github.com/KiiChain/kiichain.git
 cd kiichain3
 git checkout $SERVICE_VERSION
 make install

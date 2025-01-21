@@ -20,7 +20,7 @@ The following endpoints are exposed:
 
 Persistent peer:
 
-- 42355192eb77b71edbaa7e03f38e335849993ca0@p2p.uno.sentry.testnet.v3.kiivalidator.com
+- 5b6aa55124c0fd28e47d7da091a69973964a9fe1@p2p.uno.sentry.testnet.v3.kiivalidator.com
 
 **Dos**:
 
@@ -30,7 +30,7 @@ Persistent peer:
 
 Persistent peer:
 
-- f3232ca5248aeb38af1d99542316d3c784dbf6f2@p2p.dos.sentry.testnet.v3.kiivalidator.com
+- 5e6b283c8879e8d1b0866bda20949f9886aff967@p2p.dos.sentry.testnet.v3.kiivalidator.com
 
 ## How to Join
 
@@ -59,7 +59,7 @@ Or run the second script provided to set up a `kiichaind` service with `Cosmovis
 Install Kiichain binary.
 
 ```bash
-git clone https://github.com/KiiChain/kiichain3.git
+git clone https://github.com/KiiChain/kiichain.git
 cd kiichain3
 make install
 ```
