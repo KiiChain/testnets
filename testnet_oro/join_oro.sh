@@ -20,7 +20,7 @@ CHAIN_BINARY='kiichaind'
 CHAIN_ID=kiichain3
 
 # Persistent peers and RPC endpoints
-PERSISTENT_PEERS="5b6aa55124c0fd28e47d7da091a69973964a9fe1@p2p.uno.sentry.testnet.v3.kiivalidator.com,5e6b283c8879e8d1b0866bda20949f9886aff967@p2p.dos.sentry.testnet.v3.kiivalidator.com"
+PERSISTENT_PEERS="5b6aa55124c0fd28e47d7da091a69973964a9fe1@uno.sentry.testnet.v3.kiivalidator.com:26656,5e6b283c8879e8d1b0866bda20949f9886aff967@dos.sentry.testnet.v3.kiivalidator.com:26656"
 PRIMARY_ENDPOINT=https://rpc.uno.sentry.testnet.v3.kiivalidator.com
 SECONDARY_ENDPOINT=https://rpc.dos.sentry.testnet.v3.kiivalidator.com
 

@@ -36,7 +36,7 @@ The following endpoints are exposed:
 
 Persistent peer:
 
-- 5b6aa55124c0fd28e47d7da091a69973964a9fe1@p2p.uno.sentry.testnet.v3.kiivalidator.com
+- 5b6aa55124c0fd28e47d7da091a69973964a9fe1@uno.sentry.testnet.v3.kiivalidator.com:26656
 
 **Dos**:
 
@@ -44,7 +44,7 @@ Persistent peer:
 - `Rest (LCD)`: https://lcd.dos.sentry.testnet.v3.kiivalidator.com
 - `JSON-RPC (EVM)`: https://json-rpc.dos.sentry.testnet.v3.kiivalidator.com
 
-- 5e6b283c8879e8d1b0866bda20949f9886aff967@p2p.dos.sentry.testnet.v3.kiivalidator.com
+- 5e6b283c8879e8d1b0866bda20949f9886aff967@dos.sentry.testnet.v3.kiivalidator.com:26656
 
 ### Faucet
 
