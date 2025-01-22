@@ -25,7 +25,7 @@ PRIMARY_ENDPOINT=https://rpc.uno.sentry.testnet.v3.kiivalidator.com
 SECONDARY_ENDPOINT=https://rpc.dos.sentry.testnet.v3.kiivalidator.com
 
 # The genesis for the chain
-GENESIS_URL=https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/master/testnet_oro/genesis.json
+GENESIS_URL=https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/main/testnet_oro/genesis.json
 
 # Install wget, git and jq
 sudo apt update
