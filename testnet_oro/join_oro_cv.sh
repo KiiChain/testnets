@@ -117,9 +117,15 @@ echo "Installing cosmovisor..."
 export BINARY=$NODE_HOME/cosmovisor/genesis/bin/$CHAIN_BINARY
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.5.0
 
+# Apply env vars
+export DAEMON_NAME=$CHAIN_BINARY
 echo "export DAEMON_NAME=$CHAIN_BINARY" >> ~/.profile
+export DAEMON_HOME=$NODE_HOME
 echo "export DAEMON_HOME=$NODE_HOME" >> ~/.profile
+export DAEMON_DATA_BACKUP_DIR=$NODE_HOME/cosmovisor/backup
 echo "export DAEMON_DATA_BACKUP_DIR=$NODE_HOME/cosmovisor/backup" >> ~/.profile
+export DAEMON_RESTART_AFTER_UPGRADE="true"
+echo 'export DAEMON_RESTART_AFTER_UPGRADE="true"' >> ~/.profile
 
 # Create the service
 echo "Creating $SERVICE_NAME.service..."
