@@ -12,7 +12,7 @@ NODE_KEY_FILE=${2:-"$HOME/node_key.json"}
 NODE_HOME=~/.kiichain3
 NODE_MONIKER=testnet_oro
 SERVICE_NAME=kiichain3
-SERVICE_VERSION="v1.2.0"
+SERVICE_VERSION="v1.3.0"
 # ***
 
 # Binary
@@ -40,6 +40,7 @@ rm go*linux-amd64.tar.gz
 wget https://go.dev/dl/go1.22.10.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.10.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
 
 # Install Kiichain3 binary
 echo "Installing build-essential..."
@@ -53,6 +54,7 @@ cd kiichain3
 git checkout $SERVICE_VERSION
 make install
 export PATH=$PATH:$HOME/go/bin
+echo 'export PATH=$PATH:$HOME/go/bin' >> ~/.profile
 
 # Initialize home directory
 echo "Initializing $NODE_HOME..."
@@ -108,11 +110,16 @@ export PATH=$PATH:/usr/local/go/bin
 echo "Setting up cosmovisor..."
 mkdir -p $NODE_HOME/cosmovisor/genesis/bin
 mkdir -p $NODE_HOME/cosmovisor/upgrades
+mkdir -p $NODE_HOME/cosmovisor/backup
 cp $(which $CHAIN_BINARY) $NODE_HOME/cosmovisor/genesis/bin
 
 echo "Installing cosmovisor..."
 export BINARY=$NODE_HOME/cosmovisor/genesis/bin/$CHAIN_BINARY
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.5.0
+
+echo "export DAEMON_NAME=$CHAIN_BINARY" >> ~/.profile
+echo "export DAEMON_HOME=$NODE_HOME" >> ~/.profile
+echo "export DAEMON_DATA_BACKUP_DIR=$NODE_HOME/cosmovisor/backup" >> ~/.profile
 
 # Create the service
 echo "Creating $SERVICE_NAME.service..."

@@ -40,6 +40,7 @@ rm go*linux-amd64.tar.gz
 wget https://go.dev/dl/go1.22.10.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.10.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
 
 # Install Kiichain3 binary
 echo "Installing build-essential..."
@@ -53,6 +54,7 @@ cd kiichain3
 git checkout $SERVICE_VERSION
 make install
 export PATH=$PATH:$HOME/go/bin
+echo 'export PATH=$PATH:$HOME/go/bin' >> ~/.profile
 
 # Initialize home directory
 echo "Initializing $NODE_HOME..."
