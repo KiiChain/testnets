@@ -60,7 +60,7 @@ Install Kiichain binary.
 
 ```bash
 git clone https://github.com/KiiChain/kiichain.git
-cd kiichain3
+cd kiichain
 make install
 ```
 
