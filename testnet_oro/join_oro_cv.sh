@@ -101,12 +101,6 @@ cp $PRIV_VALIDATOR_KEY_FILE $NODE_HOME/config/priv_validator_key.json
 cp $NODE_KEY_FILE $NODE_HOME/config/node_key.json
 
 # Set up cosmovisor
-echo "Installing go..."
-rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.20.12.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.20.12.linux-amd64.tar.gz
-export PATH=$PATH:/usr/local/go/bin
-
 echo "Setting up cosmovisor..."
 mkdir -p $NODE_HOME/cosmovisor/genesis/bin
 mkdir -p $NODE_HOME/cosmovisor/upgrades
