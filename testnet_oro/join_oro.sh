@@ -45,12 +45,12 @@ echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
 # Install Kiichain3 binary
 echo "Installing build-essential..."
 sudo apt install build-essential -y
-echo "Installing Kiichain3..."
+echo "Installing Kiichain..."
 cd $HOME
 mkdir -p $HOME/go/bin
-rm -rf kiichain3
+rm -rf kiichain
 git clone https://github.com/KiiChain/kiichain.git
-cd kiichain3
+cd kiichain
 git checkout $SERVICE_VERSION
 make install
 export PATH=$PATH:$HOME/go/bin

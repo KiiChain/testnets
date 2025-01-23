@@ -42,15 +42,15 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.10.linux-amd64.t
 export PATH=$PATH:/usr/local/go/bin
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
 
-# Install Kiichain3 binary
+# Install Kiichain binary
 echo "Installing build-essential..."
 sudo apt install build-essential -y
-echo "Installing Kiichain3..."
+echo "Installing Kiichain..."
 cd $HOME
 mkdir -p $HOME/go/bin
-rm -rf kiichain3
+rm -rf kiichain
 git clone https://github.com/KiiChain/kiichain.git
-cd kiichain3
+cd kiichain
 git checkout $SERVICE_VERSION
 make install
 export PATH=$PATH:$HOME/go/bin
