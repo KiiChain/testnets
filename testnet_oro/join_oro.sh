@@ -135,3 +135,6 @@ echo "***********************"
 echo "To see the service log enter:"
 echo "journalctl -fu $SERVICE_NAME.service"
 echo "***********************"
+
+# Get the env vars
+source ~/.profile
