@@ -90,6 +90,12 @@ sed -i.bak -e "s|^trust-hash *=.*|trust-hash = \"$SYNC_BLOCK_HASH\"|" $NODE_HOME
 # Set the node as validator
 sed -i 's/mode = "full"/mode = "validator"/g' $NODE_HOME/config/config.toml
 
+# Enable DB
+sed -i.bak -e "s|^occ-enabled *=.*|occ-enabled = true|" $NODE_HOME/config/app.toml
+sed -i.bak -e "s|^sc-enable *=.*|sc-enable = true|" $NODE_HOME/config/app.toml
+sed -i.bak -e "s|^ss-enable *=.*|ss-enable = true|" $NODE_HOME/config/app.toml
+sed -i.bak -e 's/^# concurrency-workers = 20$/concurrency-workers = 500/' $NODE_HOME/config/app.toml
+
 # Replace genesis file
 echo "Replacing genesis file..."
 wget $GENESIS_URL -O genesis.json
