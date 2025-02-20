@@ -41,6 +41,62 @@
             "decimals": 6,
             "chainId": 1336,
             "logoURI": "https://etherscan.io/token/images/tethernew_32.svg"
+        },
+        {
+            "name": "USD Coin",
+            "address": "0xb72FfA8E8079365c1890948464B542E42EEC892B",
+            "symbol": "USDC",
+            "decimals": 6,
+            "chainId": 1336,
+            "logoURI": "https://etherscan.io/token/images/usdc_ofc_32.svg"
+        },
+        {
+            "name": "Wrapped BTC",
+            "address": "0x7806BbEf4F5aba0Bd0e96139EeEb2DF88E7839e5",
+            "symbol": "WBTC",
+            "decimals": 8,
+            "chainId": 1336,
+            "logoURI": "https://etherscan.io/token/images/wrappedbtc_ofc_32.svg"
+        },
+        {
+            "name": "Argentine Peso",
+            "address": "0x073BCdb3F328cbc26efEf79d35AA18d88E657805",
+            "symbol": "ARS",
+            "decimals": 18,
+            "chainId": 1336,
+            "logoURI": "https://transfero.com/wp-content/uploads/2024/09/flag_argentina.svg"
+        },
+        {
+            "name": "Brazilian Reais",
+            "address": "0x83ddda4E424714a873ffB3c74DeC3375fF46Baec",
+            "symbol": "BRL",
+            "decimals": 61,
+            "chainId": 1336,
+            "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/4811.png"
+        },
+        {
+            "name": "Colombian Pesos",
+            "address": "0x23633636E2dB08Cbb40c3007D9c90783b3d8AC5E",
+            "symbol": "COPM",
+            "decimals": 6,
+            "chainId": 1336,
+            "logoURI": "https://stabull.finance/wp-content/uploads/2024/12/copm.svg"
+        },
+        {
+            "name": "Mexican Pesos",
+            "address": "0xc0E5ae83A2D375f360Fc3dCf767b52b52F22f4FC",
+            "symbol": "MXN",
+            "decimals": 6,
+            "chainId": 1336,
+            "logoURI": "https://mxnc.mx/wp-content/uploads/2019/03/mxnc_nolettering.png"
+        },
+        {
+            "name": "Tether Gold",
+            "address": "0xd6cb60d65f1331e1C9e70213d7a5bB1E60438CBc",
+            "symbol": "XAUt",
+            "decimals": 6,
+            "chainId": 1336,
+            "logoURI": "https://etherscan.io/token/images/tethergoldnew_32.png"
         }
     ]
 }
