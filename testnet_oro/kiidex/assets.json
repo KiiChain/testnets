@@ -3,7 +3,7 @@
     "timestamp": "2077-01-01T11:11:11.111Z",
     "version": {
         "major": 1,
-        "minor": 0,
+        "minor": 1,
         "patch": 5
     },
     "tags": {},
@@ -33,6 +33,14 @@
             "decimals": 18,
             "chainId": 1336,
             "logoURI": "https://github.com/0sum-io/erc20-A-B/assets/19412160/196c68d7-3503-46f8-b8fe-ac7b3853a409"
+        },
+        {
+            "name": "Tether USD",
+            "address": "0x1A9992f48dE81C57D38147F3c573E84575021de6",
+            "symbol": "USDT",
+            "decimals": 6,
+            "chainId": 1336,
+            "logoURI": "https://etherscan.io/token/images/tethernew_32.svg"
         }
     ]
 }
