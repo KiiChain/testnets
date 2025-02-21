@@ -4,7 +4,7 @@
     "version": {
         "major": 2,
         "minor": 0,
-        "patch": 0
+        "patch": 1
     },
     "tags": {},
     "logoURI": "https://avatars.githubusercontent.com/u/139797706",
@@ -70,7 +70,7 @@
             "name": "Brazilian Reais",
             "address": "0x83ddda4E424714a873ffB3c74DeC3375fF46Baec",
             "symbol": "BRL",
-            "decimals": 61,
+            "decimals": 6,
             "chainId": 1336,
             "logoURI": "https://s2.coinmarketcap.com/static/img/coins/64x64/4811.png"
         },
