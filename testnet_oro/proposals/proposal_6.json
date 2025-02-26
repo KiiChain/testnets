@@ -1,0 +1,12 @@
+{
+    "title": "Increase the signed blocks window on the slashing module",
+    "description": "Increase the signed blocks window to about 24 hours or more",
+    "changes": [
+        {
+            "subspace": "slashing",
+            "key": "SignedBlocksWindow",
+            "value": "151200"
+        }
+    ],
+    "deposit": "10000000ukii"
+}
