@@ -50,7 +50,7 @@ Persistent peer:
 
 You can get tokens to our Testnet Oro by using our Explorer app:
 
-- [KiiChain Explorer Faucet](https://app.kiichain.io/wallet/accounts)
+- [KiiChain Explorer Faucet](https://explorer.kiichain.io/wallet/accounts)
 
 Our through our Discord channel:
 
