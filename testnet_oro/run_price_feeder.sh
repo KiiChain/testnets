@@ -6,7 +6,7 @@ SERVICE_VERSION="v3.0.0"
 PROJECT_PATH="$HOME/kiichain"
 SERVICE_NAME="price_feeder"
 CONFIG_PATH=$PROJECT_PATH/oracle/price_feeder/config.toml
-KEYRING_BACKEND="test" 
+KEYRING_BACKEND="os" 
 VALIDATOR_ACCOUNT_NAME="<YOUR_VALIDATOR_ACCOUNT>" # <- Edit this
 VALIDATOR_ADDRESS="kiivaloper1..." # <- Edit this
 KEYRING_PASSWORD="<YOUR_PASSWORD_HERE>" # <- Edit this 
@@ -30,19 +30,13 @@ echo "Creating and delegating account..."
 DELEGATE_ADDRESS=$(echo "$KEYRING_PASSWORD" | kiichaind keys add price-feeder-delegate --keyring-backend "$KEYRING_BACKEND" --output json | jq -r ".address")
 echo "Delegate address: $DELEGATE_ADDRESS"
 
-# wait time between transactions
-sleep 2
-
 # send tokens to the delegated wallet
 echo "Setting feedeing address..."
-echo "$KEYRING_PASSWORD" | kiichaind tx oracle set-feeder "$DELEGATE_ADDRESS" --from "$VALIDATOR_ACCOUNT_NAME" --fees 21000ukii -y --chain-id "$CHAIN_ID" --keyring-backend "$KEYRING_BACKEND"
-
-# wait time between transactions
-sleep 5
+echo "$KEYRING_PASSWORD" | kiichaind tx oracle set-feeder "$DELEGATE_ADDRESS" --from "$VALIDATOR_ACCOUNT_NAME" --fees 21000ukii -y --chain-id "$CHAIN_ID" --keyring-backend "$KEYRING_BACKEND" -b block
 
 # send tokens to the delegated adddress 
 echo "Sending tokens..."
-echo "$KEYRING_PASSWORD" | kiichaind tx bank send "$VALIDATOR_ACCOUNT_NAME" "$DELEGATE_ADDRESS" 100000000ukii --fees=21000ukii -y --keyring-backend "$KEYRING_BACKEND" 
+echo "$KEYRING_PASSWORD" | kiichaind tx bank send "$VALIDATOR_ACCOUNT_NAME" "$DELEGATE_ADDRESS" 100000000ukii --fees=21000ukii -y --keyring-backend "$KEYRING_BACKEND" -b block
 
 # setup config.toml
 echo "Setting up config file..."
