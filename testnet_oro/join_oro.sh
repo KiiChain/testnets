@@ -9,15 +9,15 @@
 # ***
 PRIV_VALIDATOR_KEY_FILE=${1:-"$HOME/priv_validator_key.json"}
 NODE_KEY_FILE=${2:-"$HOME/node_key.json"}
-NODE_HOME=~/.kiichain3
+NODE_HOME=~/.kiichain
 NODE_MONIKER=testnet_oro
-SERVICE_NAME=kiichain3
-SERVICE_VERSION="v3.0.0"
+SERVICE_NAME=kiichain
+SERVICE_VERSION="v1.0.0"
 # ***
 
 # Binary
 CHAIN_BINARY='kiichaind'
-CHAIN_ID=kiichain3
+CHAIN_ID=kiichain_404
 
 # Persistent peers and RPC endpoints
 PERSISTENT_PEERS="5b6aa55124c0fd28e47d7da091a69973964a9fe1@uno.sentry.testnet.v3.kiivalidator.com:26656,5e6b283c8879e8d1b0866bda20949f9886aff967@dos.sentry.testnet.v3.kiivalidator.com:26656"
@@ -34,11 +34,11 @@ sudo apt-get install git jq curl wget -y
 # Stop service if exists
 systemctl --user stop $SERVICE_NAME.service
 
-# Install go 1.22
+# Install go 1.23.8
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.22.10.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.10.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.23.8.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.23.8.linux-amd64.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
 
@@ -49,7 +49,7 @@ echo "Installing Kiichain..."
 cd $HOME
 mkdir -p $HOME/go/bin
 rm -rf kiichain
-git clone https://github.com/KiiChain/kiichain.git
+git clone git@github.com:KiiChain/kiichain4.git
 cd kiichain
 git checkout $SERVICE_VERSION
 make install
