@@ -2,11 +2,12 @@
 
 The `Testnet Oro` chain is the Kiichain testnet.
 
-- **Chain-ID**: `kiichain3`
-- **denom**: `ukii`
+- **Chain-ID**: `oro_1336-1`
+- **denom**: `akii`
+- **decimals**: `18`
 - **Spawn time**: `2024-12-17T17:55:40.565516258Z`
 - **Genesis file with CCV state:** [genesis.json](./genesis.json) (available after chain spawn time)
-- **SHA256 for genesis file**: `e22442f19149db7658bcf777d086b52b38d834ea17010c313cd8aece137b647a`
+- **SHA256 for genesis file**: `<UPDATE_ME>`
 
 ## Endpoints
 
@@ -36,9 +37,9 @@ Persistent peer:
 
 ### Hardware Requirements
 
-- 64 GB RAM
+- 8 GB RAM
 - 1 TB NVME SSD
-- 16 Cores x86_64
+- 4 Cores x86_64
 
 #### Bash Script
 
