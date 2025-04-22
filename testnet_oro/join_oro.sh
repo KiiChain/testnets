@@ -50,7 +50,7 @@ echo "Installing Kiichain..."
 cd $HOME
 mkdir -p $HOME/go/bin
 rm -rf kiichain
-git clone git@github.com:KiiChain/kiichain4.git
+git clone https://github.com/KiiChain/kiichain.git
 cd kiichain
 git checkout $SERVICE_VERSION
 make install
