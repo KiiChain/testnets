@@ -121,7 +121,7 @@ sudo systemctl daemon-reload
 # Enable and start the service after the genesis that includes the CCV state is in place
 sudo systemctl enable $SERVICE_NAME.service
 sudo systemctl start $SERVICE_NAME.service
-sudo systemctl restart systemd-journald1
+sudo systemctl restart systemd-journald
 
 # Add Kiichaind to the path
 echo "Setting up path for Kiichaind bin..."
