@@ -1,6 +1,6 @@
 # 🧱 Builder Notice: Kiichain EVM Fork
 
-### 📆 Fork Date: **2025-04-23**
+### 📆 Fork Date: **2025-04-29 17:00UTC**
 
 ### 🆕 New Chain ID: `oro_1336-1`
 
@@ -31,7 +31,7 @@ Be sure to update **any Cosmos SDK integrations, frontends, or tooling** with th
 
 To enable Ethereum-compatible keys in Keplr, **update your chain config** as shown below or use the official JSON link:
 
-🔗 [Official Keplr JSON](https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/main/testnet_oro/assets/connections/keplr.json)
+🔗 [Official Keplr JSON](../assets/connections/keplr.json)
 
 ```json
 {
@@ -70,7 +70,7 @@ Keplr will use `eth_secp256k1` keys and show Ethereum-style addresses correctly 
 
 Use this official EVM config JSON for RPC-based integrations:
 
-🔗 [Official EVM JSON](https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/main/testnet_oro/assets/connections/evm.json)
+🔗 [Official EVM JSON](https://github.com/ethereum-lists/chains/blob/master/_data/chains/eip155-1336.json)
 
 ## ⚠️ Required Actions for Builders
 
@@ -95,6 +95,23 @@ Use this official EVM config JSON for RPC-based integrations:
 
 ## 📣 Support Channels
 
-- GitHub discussions & issues
-- Developer Telegram/Discord
-- Official documentation (updated on fork day)
+- [Discord](https://discord.com/invite/kiichain)
+- [Official documentation](https://docs.kiiglobal.io)
+
+## 📚 References
+
+### 📘 Documentation
+
+- 📄 [Kiichain Docs](https://docs.kiiglobal.io)
+- 🛠️ [Builders Migration Notice](./builders_notice.md)
+
+### 🧰 Scripts
+
+- 🔄 [Migration Script](fork_migration.sh)
+- 🚀 [Join Oro](../join_oro.sh)
+- 🤖 [Join Oro With Cosmovisor](../join_oro_cv.sh)
+
+### 🔐 Wallet Connections
+
+- 🪙 [Official EVM JSON](https://github.com/ethereum-lists/chains/blob/master/_data/chains/eip155-1336.json)
+- 🧩 [Official Keplr JSON](../assets/connections/keplr.json)

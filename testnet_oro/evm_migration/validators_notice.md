@@ -1,6 +1,6 @@
 # 🔧 Validator Notice: Kiichain EVM Fork
 
-### 📆 Fork Date: **2025-04-23**
+### 📆 Fork Date: **2025-04-29 17:00UTC**
 
 ### 🆕 New Chain ID: `oro_1336-1`
 
@@ -34,13 +34,14 @@ Your role is **essential** to ensure a smooth transition. Please read carefully.
 
    - Be sure to **backup your private validator key and node key**
    - Validator wallets will use the legacy wallet generate and can be recovered with:
-     ```bash
-     kiichaind keys add <wallet_name> --keyring-backend test --recover --coin-type 118 --key-type secp256k1
-     ```
+
+```bash
+kiichaind keys add <wallet_name> --keyring-backend test --recover --coin-type 118 --key-type secp256k1
+```
 
 3. **Clear your schedule for upgrade coordination:**
    - You will have **5 days** after the fork to upgrade and rejoin the network
-   - **Guides, migration scripts, and a genesis file** will be published **on the day of the upgrade**
+   - **The genesis file** will be published **on the day of the upgrade**
 
 ## 🚀 Migration Process (Post-Fork)
 
@@ -52,13 +53,16 @@ On upgrade day, we will release:
 
 ### High-level migration steps:
 
-1. **Stop your node** at the fork height (to be announced)
+1. **Stop your node** at the fork time
+   - Be sure to **backup your private validator key and node key**
 2. **Download and install the new binary**
 3. **Initialize the new chain directory**
 4. **Restore the node with state-sync**
 5. **Verify validator status and block signing**
 
-Full instructions will be included in the migration guide.
+A migration guide can be found at:
+
+- [Fork Migration script](./fork_migration.sh)
 
 ## 📦 Version Reset: `v1.0.0`
 
@@ -74,5 +78,24 @@ All future upgrades will follow [Semantic Versioning](https://semver.org/), mark
 
 You’ll receive updates and support through:
 
-- 🔧 **Validator chat**
-- 📝 **GitHub releases**
+- [Official documentation](https://docs.kiiglobal.io)
+- [**Validator chat**](https://discord.com/channels/996878520594735235/1340027288628232252)
+- [**GitHub releases**](https://github.com/KiiChain/kiichain/releases)
+
+## 📚 References
+
+### 📘 Documentation
+
+- [Kiichain Docs](https://docs.kiiglobal.io)
+- [Builders Migration Notice](./builders_notice.md)
+
+### 🧰 Scripts
+
+- [Migration Script](fork_migration.sh)
+- [Join Oro](../join_oro.sh)
+- [Join Oro With Cosmovisor](../join_oro_cv.sh)
+
+### 🔐 Wallet Connections
+
+- [Official EVM JSON](https://github.com/ethereum-lists/chains/blob/master/_data/chains/eip155-1336.json)
+- [Official Keplr JSON](../assets/connections/keplr.json)
