@@ -26,5 +26,5 @@ sudo rm /etc/systemd/system/$SERVICE_NAME.service
 # Install the new chain with Cosmosvisor
 curl -O https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/main/testnet_oro/join_oro_cv.sh
 chmod +x join_oro_cv.sh
-# Initialize the script passing the private validator and node key from the backup
+# Initialize the script passing the private validator key and node key from the backup
 ./join_oro_cv.sh $NODE_HOME_BACKUP/config/priv_validator_key.json $NODE_HOME_BACKUP/config/node_key.json

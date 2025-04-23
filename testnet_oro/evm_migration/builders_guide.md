@@ -1,4 +1,4 @@
-# 🧱 Builder Notice: Kiichain EVM Fork
+# 🧱 Builder Migration Guide: Kiichain EVM Fork
 
 ### 📆 Fork Date: **2025-04-29 17:00UTC**
 
@@ -102,16 +102,17 @@ Use this official EVM config JSON for RPC-based integrations:
 
 ### 📘 Documentation
 
-- 📄 [Kiichain Docs](https://docs.kiiglobal.io)
-- 🛠️ [Builders Migration Notice](./builders_notice.md)
+- [Kiichain Docs](https://docs.kiiglobal.io)
+- [Builders Migration Guide](./builders_notice.md)
+- [Validator Migration Guide](validators_guide.md)
 
 ### 🧰 Scripts
 
-- 🔄 [Migration Script](fork_migration.sh)
-- 🚀 [Join Oro](../join_oro.sh)
-- 🤖 [Join Oro With Cosmovisor](../join_oro_cv.sh)
+- [Migration Script](fork_migration.sh)
+- [Join Oro](../join_oro.sh)
+- [Join Oro With Cosmovisor](../join_oro_cv.sh)
 
 ### 🔐 Wallet Connections
 
-- 🪙 [Official EVM JSON](https://github.com/ethereum-lists/chains/blob/master/_data/chains/eip155-1336.json)
-- 🧩 [Official Keplr JSON](../assets/connections/keplr.json)
+- [Official EVM JSON](https://github.com/ethereum-lists/chains/blob/master/_data/chains/eip155-1336.json)
+- [Official Keplr JSON](../assets/connections/keplr.json)

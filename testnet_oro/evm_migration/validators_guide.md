@@ -1,4 +1,4 @@
-# 🔧 Validator Notice: Kiichain EVM Fork
+# 🔧 Validator Migration Guide: Kiichain EVM Fork
 
 ### 📆 Fork Date: **2025-04-29 17:00UTC**
 
@@ -87,7 +87,8 @@ You’ll receive updates and support through:
 ### 📘 Documentation
 
 - [Kiichain Docs](https://docs.kiiglobal.io)
-- [Builders Migration Notice](./builders_notice.md)
+- [Builders Migration Guide](./builders_notice.md)
+- [Validator Migration Guide](validators_guide.md)
 
 ### 🧰 Scripts
 
