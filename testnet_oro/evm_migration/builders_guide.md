@@ -41,7 +41,7 @@ To enable Ethereum-compatible keys in Keplr, **update your chain config** as sho
     "chainId": 1336,
     "rpc": "https://json-rpc.uno.sentry.testnet.v3.kiivalidator.com"
   },
-  "features": ["eth-address-gen", "eth-key-sign", "cosmos-evm"],
+  "features": ["eth-address-gen", "eth-key-sign", "eth-secp256k1-cosmos"],
   "currencies": [
     {
       "coinDenom": "AKII",

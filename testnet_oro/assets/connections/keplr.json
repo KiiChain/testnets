@@ -52,6 +52,6 @@
     "features": [
         "eth-address-gen",
         "eth-key-sign",
-        "cosmos-evm"
+        "eth-secp256k1-cosmos"
     ]
 }
