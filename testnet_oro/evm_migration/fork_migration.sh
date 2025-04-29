@@ -10,7 +10,7 @@ NODE_HOME=$HOME/.kiichain3
 NODE_HOME_BACKUP=$HOME/.kiichain3-bk
 CHAIN_BINARY='kiichaind'
 KIICHAIN_REPO_PATH=$HOME/kiichain
-SERVICE_NAME=kiichain
+SERVICE_NAME=kiichain3
 
 # Stop service if exists
 systemctl --user stop $SERVICE_NAME.service
