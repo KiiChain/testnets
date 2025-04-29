@@ -71,7 +71,7 @@ sed -i -e "/^persistent_peers =/ s^= .*^= \"$PERSISTENT_PEERS\"^" $NODE_HOME/con
 sed -i -e "/minimum-gas-prices =/ s^= .*^= \"$MINIMUM_GAS_PRICES\"^" $NODE_HOME/config/app.toml
 
 # Configure state-sync
-TRUST_HEIGHT_DELTA=500
+TRUST_HEIGHT_DELTA=200
 LATEST_HEIGHT=$(curl -s "$PRIMARY_ENDPOINT"/block | jq -r ".result.block.header.height")
 if [[ "$LATEST_HEIGHT" -gt "$TRUST_HEIGHT_DELTA" ]]; then
 SYNC_BLOCK_HEIGHT=$(($LATEST_HEIGHT - $TRUST_HEIGHT_DELTA))
