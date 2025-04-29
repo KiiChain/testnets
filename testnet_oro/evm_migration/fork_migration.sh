@@ -6,14 +6,14 @@
 # and set up a service to join the testnet oro chain.
 
 # Define the variables
-NODE_HOME=$HOME/.kiichain3
+NODE_HOME=$HOME/.kiichain3 # Verify what is the folder name localy
 NODE_HOME_BACKUP=$HOME/.kiichain3-bk
 CHAIN_BINARY='kiichaind'
 KIICHAIN_REPO_PATH=$HOME/kiichain
-SERVICE_NAME=kiichain3
+SERVICE_NAME=kiichain3 # Verify what is the service name localy
 
 # Stop service if exists
-systemctl --user stop $SERVICE_NAME.service
+sudo systemctl --user stop $SERVICE_NAME.service
 
 # Backup the current node home
 mv $NODE_HOME $NODE_HOME_BACKUP
