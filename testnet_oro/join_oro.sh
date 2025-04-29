@@ -12,7 +12,7 @@ NODE_KEY_FILE=${2:-"$HOME/node_key.json"}
 NODE_HOME=~/.kiichain
 NODE_MONIKER=testnet_oro
 SERVICE_NAME=kiichain
-SERVICE_VERSION="v1.0.0"
+SERVICE_VERSION="v1.2.0"
 MINIMUM_GAS_PRICES="1000000000akii"
 # ***
 
@@ -38,8 +38,10 @@ systemctl --user stop $SERVICE_NAME.service
 # Install go 1.23.8
 echo "Installing go..."
 rm go*linux-amd64.tar.gz
-wget https://go.dev/dl/go1.23.8.linux-amd64.tar.gz
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.23.8.linux-amd64.tar.gz
+GO_BINARY=go1.23.8.linux-amd64.tar.gz
+wget https://go.dev/dl/$GO_BINARY
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf $GO_BINARY
+rm $GO_BINARY
 export PATH=$PATH:/usr/local/go/bin
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
 
@@ -70,7 +72,7 @@ sed -i -e "/minimum-gas-prices =/ s^= .*^= \"$MINIMUM_GAS_PRICES\"^" $NODE_HOME/
 
 # Configure state-sync
 TRUST_HEIGHT_DELTA=500
-LATEST_HEIGHT=$(curl -s "$PRIMARY_ENDPOINT"/block | jq -r ".block.header.height")
+LATEST_HEIGHT=$(curl -s "$PRIMARY_ENDPOINT"/block | jq -r ".result.block.header.height")
 if [[ "$LATEST_HEIGHT" -gt "$TRUST_HEIGHT_DELTA" ]]; then
 SYNC_BLOCK_HEIGHT=$(($LATEST_HEIGHT - $TRUST_HEIGHT_DELTA))
 else
@@ -78,7 +80,7 @@ SYNC_BLOCK_HEIGHT=$LATEST_HEIGHT
 fi
 
 # Get the sync block hash
-SYNC_BLOCK_HASH=$(curl -s "$PRIMARY_ENDPOINT/block?height=$SYNC_BLOCK_HEIGHT" | jq -r ".block_id.hash")
+SYNC_BLOCK_HASH=$(curl -s "$PRIMARY_ENDPOINT/block?height=$SYNC_BLOCK_HEIGHT" | jq -r ".result.block_id.hash")
 
 # Enable state sync
 sed -i.bak -e "s|^enable *=.*|enable = true|" $NODE_HOME/config/config.toml
