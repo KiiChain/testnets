@@ -7,7 +7,7 @@ The `Testnet Oro` chain is the Kiichain testnet.
 - **decimals**: `18`
 - **Spawn time**: `2024-12-17T17:55:40.565516258Z`
 - **Genesis file with CCV state:** [genesis.json](./genesis.json) (available after chain spawn time)
-- **SHA256 for genesis file**: `<UPDATE_ME>`
+- **SHA256 for genesis file**: `2805ae1752dc8c3435afd6bdceea929b3bbd2883606f3f3589f4d62c99156d2d`
 
 ## Endpoints
 
