@@ -7,13 +7,13 @@
         "chainId": 1336,
         "rpc": "https://json-rpc.uno.sentry.testnet.v3.kiivalidator.com"
     },
-    "chainSymbolImageUrl": "https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/main/testnet_oro/assets/kii_coin_original_2_256_256.png",
+    "chainSymbolImageUrl": "https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/main/testnet_oro/assets/kii_coin_oro_256_256.png",
     "stakeCurrency": {
         "coinDenom": "Kii",
         "coinMinimalDenom": "akii",
         "coinDecimals": 18,
         "coinGeckoId": "kii",
-        "coinImageUrl": "https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/main/testnet_oro/assets/kii_coin_original_1_256_256.png"
+        "coinImageUrl": "https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/main/testnet_oro/assets/kii_coin_oro_256_256.png"
     },
     "bip44": {
         "coinType": 60
@@ -32,7 +32,7 @@
             "coinMinimalDenom": "akii",
             "coinDecimals": 18,
             "coinGeckoId": "kii",
-            "coinImageUrl": "https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/main/testnet_oro/assets/kii_coin_original_1_256_256.png"
+            "coinImageUrl": "https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/main/testnet_oro/assets/kii_coin_oro_256_256.png"
         }
     ],
     "feeCurrencies": [
@@ -41,7 +41,7 @@
             "coinMinimalDenom": "akii",
             "coinDecimals": 18,
             "coinGeckoId": "kii",
-            "coinImageUrl": "https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/main/testnet_oro/assets/kii_coin_original_1_256_256.png",
+            "coinImageUrl": "https://raw.githubusercontent.com/KiiChain/testnets/refs/heads/main/testnet_oro/assets/kii_coin_oro_256_256.png",
             "gasPriceStep": {
                 "low": 80000000000,
                 "average": 80000000000,
