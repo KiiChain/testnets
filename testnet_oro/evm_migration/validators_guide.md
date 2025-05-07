@@ -99,4 +99,4 @@ You’ll receive updates and support through:
 ### 🔐 Wallet Connections
 
 - [Official EVM JSON](https://github.com/ethereum-lists/chains/blob/master/_data/chains/eip155-1336.json)
-- [Official Keplr JSON](../assets/connections/keplr.json)
+- [Official Keplr JSON](https://github.com/chainapsis/keplr-chain-registry/blob/main/cosmos/oro_1336.json)

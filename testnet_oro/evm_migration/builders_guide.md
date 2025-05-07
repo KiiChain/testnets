@@ -31,7 +31,7 @@ Be sure to update **any Cosmos SDK integrations, frontends, or tooling** with th
 
 To enable Ethereum-compatible keys in Keplr, **update your chain config** as shown below or use the official JSON link:
 
-🔗 [Official Keplr JSON](../assets/connections/keplr.json)
+🔗 [Official Keplr JSON](https://github.com/chainapsis/keplr-chain-registry/blob/main/cosmos/oro_1336.json)
 
 ```json
 {
