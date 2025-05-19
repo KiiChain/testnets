@@ -1,0 +1,22 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.evm.feemarket.v1.MsgUpdateParams",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "params": {
+                "no_base_fee": false,
+                "base_fee_change_denominator": 8,
+                "elasticity_multiplier": 4,
+                "enable_height": "0",
+                "base_fee": "40000000000",
+                "min_gas_price": "40000000000.000000000000000000",
+                "min_gas_multiplier": "0.500000000000000000"
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "10000000000000000000akii",
+    "title": "Reduce EVM fee market parameters",
+    "summary": "Reduce the EVM fee market fees to allow better compatibility with Keplr default gas price",
+    "expedited": false
+}
