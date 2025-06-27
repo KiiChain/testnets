@@ -1,0 +1,11 @@
+{
+    "owner_roles": "https://github.com/KiiChain/Kii-RWA-Protocol/releases/tag/v0.1.0",
+    "agent_roles": "https://github.com/KiiChain/Kii-RWA-Protocol/releases/tag/v0.1.0",
+    "trusted_issuers": "https://github.com/KiiChain/Kii-RWA-Protocol/releases/tag/v0.1.0",
+    "claim_topics": "https://github.com/KiiChain/Kii-RWA-Protocol/releases/tag/v0.1.0",
+    "on_chain_id": "https://github.com/KiiChain/Kii-RWA-Protocol/releases/tag/v0.1.0",
+    "compliance_registry": "https://github.com/KiiChain/Kii-RWA-Protocol/releases/tag/v0.1.0",
+    "compliance_claims": "https://github.com/KiiChain/Kii-RWA-Protocol/releases/tag/v0.1.0",
+    "compliance_country_restriction": "https://github.com/KiiChain/Kii-RWA-Protocol/releases/tag/v0.1.0",
+    "cw20_base": "https://github.com/KiiChain/Kii-RWA-Protocol/releases/tag/v0.1.0"
+}
