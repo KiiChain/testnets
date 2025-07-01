@@ -1,0 +1,65 @@
+{
+  "chain_name": "oro_1336-1",
+  "assets": [
+    {
+      "description": "The native token of Kii",
+      "denom_units": [
+        {
+          "denom": "akii",
+          "exponent": 0
+        },
+        {
+          "denom": "kii",
+          "exponent": 18
+        }
+      ],
+      "base": "akii",
+      "name": "Kii",
+      "display": "kii",
+      "symbol": "KII",
+      "logo_uris": {
+        "png": "https://raw.githubusercontent.com/KiiChain/testnets/main/testnet_oro/assets/kii_coin_oro.png"
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/KiiChain/testnets/main/testnet_oro/assets/kii_coin_oro.png"
+        }
+      ],
+      "keywords": ["native", "utility"],
+      "socials": {
+        "website": "https://kiichain.io",
+        "twitter": "https://x.com/KiiChainio"
+      }
+    },
+    {
+      "description": "ATOM bridged via IBC from Cosmos Hub",
+      "denom_units": [
+        {
+          "denom": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+          "exponent": 0
+        },
+        {
+          "denom": "atom",
+          "exponent": 6
+        }
+      ],
+      "base": "ibc/C4CFF46FD6DE35CA4CF4CE031E643C8FDC9BA4B99AE598E9B0ED98FE3A2319F9",
+      "name": "Cosmos Hub ATOM",
+      "display": "atom",
+      "symbol": "ATOM",
+      "logo_uris": {
+        "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png"
+      },
+      "images": [
+        {
+          "png": "https://raw.githubusercontent.com/cosmos/chain-registry/master/cosmoshub/images/atom.png"
+        }
+      ],
+      "ibc": {
+        "source_chain": "cosmoshub",
+        "dst_channel": "channel-2",
+        "src_channel": "channel-482"
+      }
+    }
+  ]
+}
