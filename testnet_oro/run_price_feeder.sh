@@ -1,82 +1,127 @@
 #!/bin/bash
 
-# You should only have to modify the values in this block
-# ***
-SERVICE_VERSION="v3.0.0"
-PROJECT_PATH="$HOME/kiichain"
-SERVICE_NAME="price_feeder"
-CONFIG_PATH=$PROJECT_PATH/oracle/price_feeder/config.toml
-KEYRING_BACKEND="os" 
-VALIDATOR_ACCOUNT_NAME="<YOUR_VALIDATOR_ACCOUNT>" # <- Edit this
-VALIDATOR_ADDRESS="kiivaloper1..." # <- Edit this
-KEYRING_PASSWORD="<YOUR_PASSWORD_HERE>" # <- Edit this 
-# ***
+set -e
 
-# Binary
-PRICE_FEEDER='price_feeder'
-CHAIN_ID=kiichain3
+echo "🔧 Interactive Kiichain Price Feeder Setup 🔧"
+echo "This script will guide you through the setup of the Kiichain Price Feeder."
+echo "Please ensure you have the necessary permissions and dependencies installed before proceeding."
+echo "This script is designed to run on a Linux system with Kiichain installed and a node running."
+echo "This script also considers that the validator private is available in the keyring."
+echo ""
 
-# Build and install price-feeder
-cd $PROJECT_PATH
-git checkout $SERVICE_VERSION
-make install-price-feeder
+# 1. Setup the price feeder
+read -p "Enter the local path for price-feeder setup [default: $HOME/.kiichain/price-feeder]: " LOCAL_PATH
+LOCAL_PATH=${LOCAL_PATH:-"$HOME/.kiichain/price-feeder"}
 
-# remove key if exits
-echo "Removing existing key if present..."
-(echo y; echo y) | kiichaind keys delete price-feeder-delegate --keyring-backend "$KEYRING_BACKEND" 2>/dev/null || true
+# Ensure directory exists
+mkdir -p "$LOCAL_PATH"
 
-# create delegated wallet and delegate the voting process
-echo "Creating and delegating account..."
-DELEGATE_ADDRESS=$(echo "$KEYRING_PASSWORD" | kiichaind keys add price-feeder-delegate --keyring-backend "$KEYRING_BACKEND" --output json | jq -r ".address")
-echo "Delegate address: $DELEGATE_ADDRESS"
+# 2. Clone the repo to a temp dir if not already present
+TEMP_CLONE_DIR="/tmp/price-feeder-setup-$$"
+echo "⬇️ Cloning price-feeder repo to temp dir..."
+git clone git@github.com:KiiChain/price-feeder.git "$TEMP_CLONE_DIR"
 
-# send tokens to the delegated wallet
-echo "Setting feedeing address..."
-echo "$KEYRING_PASSWORD" | kiichaind tx oracle set-feeder "$DELEGATE_ADDRESS" --from "$VALIDATOR_ACCOUNT_NAME" --fees 21000ukii -y --chain-id "$CHAIN_ID" --keyring-backend "$KEYRING_BACKEND" -b block
+# 3. Copy example config
+CONFIG_PATH="$LOCAL_PATH/config.toml"
+echo "📄 Copying example config to $CONFIG_PATH..."
+cp "$TEMP_CLONE_DIR/config.example.toml" "$CONFIG_PATH"
 
-# send tokens to the delegated adddress 
-echo "Sending tokens..."
-echo "$KEYRING_PASSWORD" | kiichaind tx bank send "$VALIDATOR_ACCOUNT_NAME" "$DELEGATE_ADDRESS" 100000000ukii --fees=21000ukii -y --keyring-backend "$KEYRING_BACKEND" -b block
+# 4. Keyring backend
+read -p "Enter the keyring backend [default: os]: " KEYRING_BACKEND
+KEYRING_BACKEND=${KEYRING_BACKEND:-"os"}
 
-# setup config.toml
-echo "Setting up config file..."
-sed -i "s|backend = \"os\"|backend = \"$KEYRING_BACKEND\"|g" "$CONFIG_PATH"
-sed -i "s|address = \"kii1...\"|address = \"$DELEGATE_ADDRESS\"|g" "$CONFIG_PATH"
-sed -i "s|validator = \"kiivaloper1...\"|validator = \"$VALIDATOR_ADDRESS\"|g" "$CONFIG_PATH"
+# 5. Ask for password
+read -s -p "Enter the keyring password [default: test] (Default as test for test keyring): " KEYRING_PASSWORD
+echo
+KEYRING_PASSWORD=${KEYRING_PASSWORD:-"test"}
 
-# create systemctl service
-echo "Creating system daemon..."
-sudo rm /etc/systemd/system/$SERVICE_NAME.service
-sudo touch /etc/systemd/system/$SERVICE_NAME.service
+# 6. Validator account name
+read -p "Enter your validator account name: " VALIDATOR_ACCOUNT_NAME
 
-echo "[Unit]"                                                          | sudo tee /etc/systemd/system/$SERVICE_NAME.service
-echo "Description=kiichain oracle price-feeder service"                | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "After=network-online.target"                                     | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "[Service]"                                                       | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo ""                                                                | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "User=$USER"                                                      | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "ExecStart=$HOME/go/bin/$PRICE_FEEDER $CONFIG_PATH"               | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "Restart=always"                                                  | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "RestartSec=3"                                                    | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "LimitNOFILE=50000"                                               | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "Environment='PRICE_FEEDER_PASS=$KEYRING_PASSWORD'"               | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo ""                                                                | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "[Install]"                                                       | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "WantedBy=multi-user.target"                                      | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+# Validate validator account exists
+echo "🔍 Checking if validator account exists..."
+if ! echo "$KEYRING_PASSWORD" | kiichaind keys show "$VALIDATOR_ACCOUNT_NAME" --keyring-backend "$KEYRING_BACKEND" --output json >/dev/null 2>&1; then
+  echo "❌ Validator account \"$VALIDATOR_ACCOUNT_NAME\" not found. Exiting."
+  exit 1
+fi
 
-# run price-feeder
-echo "Starting price-feeder..."
+# 7. Validator operator address
+read -p "Enter your validator operator address (kiivaloper1...): " VALIDATOR_ADDRESS
+
+# 8. Create delegated feeder account
+read -p "Do you want to create and fund a new feeder account? (y/n): " SETUP_FEEDER
+if [[ "$SETUP_FEEDER" =~ ^[Yy]$ ]]; then
+    # 9. Feeder account name
+    read -p "Choose a name for the feeder key [default: feeder]: " FEEDER_KEY_NAME
+    FEEDER_KEY_NAME=${FEEDER_KEY_NAME:-"feeder"}
+
+    echo "🧹 Removing existing key if any..."
+    (echo y; echo y) | kiichaind keys delete "$FEEDER_KEY_NAME" --keyring-backend "$KEYRING_BACKEND" 2>/dev/null || true
+
+    echo "🔐 Creating feeder key..."
+    FEEDER_KEY_OUTPUT=$(echo "$KEYRING_PASSWORD" | kiichaind keys add "$FEEDER_KEY_NAME" --keyring-backend "$KEYRING_BACKEND" --output json)
+    DELEGATE_ADDRESS=$(echo "$FEEDER_KEY_OUTPUT" | jq -r ".address")
+    MNEMONIC=$(echo "$FEEDER_KEY_OUTPUT" | jq -r ".mnemonic")
+
+    echo "✅ Delegate address: $DELEGATE_ADDRESS"
+    echo "🧠 Mnemonic (save it securely!):"
+    echo "$MNEMONIC"
+
+    echo "🗳️ Setting feeder delegation..."
+    echo "$KEYRING_PASSWORD" | kiichaind tx oracle set-feeder "$DELEGATE_ADDRESS" --from "$VALIDATOR_ACCOUNT_NAME" --gas auto --gas-adjustment 1.5 --gas-prices 100000000000akii --keyring-backend "$KEYRING_BACKEND" -y
+    sleep 5
+
+    echo "💰 Sending tokens to the feeder..."
+    echo "$KEYRING_PASSWORD" | kiichaind tx bank send "$VALIDATOR_ACCOUNT_NAME" "$DELEGATE_ADDRESS" 1000000000000000000akii --gas auto --gas-adjustment 1.5 --gas-prices 100000000000akii --keyring-backend "$KEYRING_BACKEND" -y
+    sleep 5
+else
+  read -p "Enter the existing delegated feeder address: " DELEGATE_ADDRESS
+fi
+
+# 10. Patch config.toml
+echo "🛠️ Setting up config.toml with basic config..."
+sed -i "s|backend = .*|backend = \"$KEYRING_BACKEND\"|g" "$CONFIG_PATH"
+sed -i "s|address = .*|address = \"$DELEGATE_ADDRESS\"|g" "$CONFIG_PATH"
+sed -i "s|validator = .*|validator = \"$VALIDATOR_ADDRESS\"|g" "$CONFIG_PATH"
+
+# 11. Install price-feeder binary
+echo "⚙️ Installing price-feeder binary..."
+cd "$TEMP_CLONE_DIR"
+make install
+
+# 12. Create systemd service
+SERVICE_NAME="price-feeder"
+# Find the binary path
+PRICE_FEEDER_BIN=$(which price-feeder)
+
+echo "🧾 Creating systemd service..."
+sudo tee /etc/systemd/system/$SERVICE_NAME.service > /dev/null <<EOF
+[Unit]
+Description=kiichain oracle price-feeder service
+After=network-online.target
+
+[Service]
+User=$USER
+ExecStart=$PRICE_FEEDER_BIN start $CONFIG_PATH
+Restart=always
+RestartSec=3
+LimitNOFILE=50000
+Environment='PRICE_FEEDER_PASS=$KEYRING_PASSWORD'
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+# 13. Start systemd service
+echo "🚀 Starting service..."
 sudo systemctl daemon-reload
 sudo systemctl enable $SERVICE_NAME.service
 sudo systemctl start $SERVICE_NAME.service
 sudo systemctl restart systemd-journald
 
-echo "***********************"
-echo "To see the service log enter:"
-echo "journalctl -fu $SERVICE_NAME.service"
-echo "***********************"
+# 14. Cleanup
+rm -rf "$TEMP_CLONE_DIR"
 
-# Get the env vars
-source ~/.profile
-
-
+# 15. Done
+echo "✅ Setup complete!"
+echo "To view logs: journalctl -fu $SERVICE_NAME.service"
