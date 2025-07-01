@@ -1,11 +1,11 @@
 {
-    "astroport_pair_code": 69,
-    "astroport_pair_stable_code": 70,
-    "cw20_base_code": 71,
-    "astroport_native_coin_registry_code": 72,
-    "astroport_native_coin_registry_address": "kii1789aemutsu9vsk90quc3qmypwpl8akafmrz0fut06fjsuek6v8kqsp6glv",
-    "astroport_factory_code": 73,
-    "astroport_factory_address": "kii1usw2vn2kgwsd7te33ukcndynx5ahz5xaz7tywsddda256xykvxtq3aapkn",
-    "astroport_router_code": 74,
-    "astroport_router_address": "kii1pjl7cwljesaphnteh95edajuwkd6kcy5xtc0tjn755t5m6h97fcq4ppr98"
+    "astroport_pair_code": 163,
+    "astroport_pair_stable_code": 164,
+    "cw20_base_code": 165,
+    "astroport_native_coin_registry_code": 166,
+    "astroport_native_coin_registry_address": "kii17nr7kr8ttw6g4l3xek3h78tyahjasxlrukrchwkqy5395vswpses5zsqzc",
+    "astroport_factory_code": 167,
+    "astroport_factory_address": "kii1ct5yx003l9h2fsahug0vpx7xec4k66he0try0fclxg59fd4aztys4mnds9",
+    "astroport_router_code": 168,
+    "astroport_router_address": "kii12qs8835alkea96rtv9rllfwnkdfrk4vv89mxtkjapayjfknyzdwsjmmqp4"
 }

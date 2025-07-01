@@ -1,8 +1,8 @@
 {
-    "astroport_pair": "https://github.com/astroport-fi/astroport-core/releases/tag/v5.9.4",
-    "astroport_pair_stable": "https://github.com/astroport-fi/astroport-core/releases/tag/v5.9.4",
+    "astroport_pair": "https://github.com/astroport-fi/astroport-core/releases/tag/v4.0.3",
+    "astroport_pair_stable": "https://github.com/astroport-fi/astroport-core/releases/tag/v4.0.3",
     "cw20_base": "https://github.com/CosmWasm/cw-plus/commit/17b1ac4d518ee9b546b82706a70b77cfff1b0ee3",
-    "astroport_native_coin_registry": "https://github.com/astroport-fi/astroport-core/releases/tag/v5.9.4",
-    "astroport_factory": "https://github.com/astroport-fi/astroport-core/releases/tag/v5.9.4",
-    "astroport_router": "https://github.com/astroport-fi/astroport-core/releases/tag/v5.9.45"
+    "astroport_native_coin_registry": "https://github.com/astroport-fi/astroport-core/releases/tag/v4.0.3",
+    "astroport_factory": "https://github.com/astroport-fi/astroport-core/releases/tag/v4.0.3",
+    "astroport_router": "https://github.com/astroport-fi/astroport-core/releases/tag/v4.0.3"
 }
