@@ -48,13 +48,13 @@ fi
 # 7. Validator operator address
 read -p "Enter your validator operator address (kiivaloper1...): " VALIDATOR_ADDRESS
 
-# 8. Feeder account name
-read -p "Choose a name for the feeder key [default: feeder]: " FEEDER_KEY_NAME
-FEEDER_KEY_NAME=${FEEDER_KEY_NAME:-"feeder"}
-
-# 9. Create delegated feeder account
+# 8. Create delegated feeder account
 read -p "Do you want to create and fund a new feeder account? (y/n): " SETUP_FEEDER
 if [[ "$SETUP_FEEDER" =~ ^[Yy]$ ]]; then
+    # 9. Feeder account name
+    read -p "Choose a name for the feeder key [default: feeder]: " FEEDER_KEY_NAME
+    FEEDER_KEY_NAME=${FEEDER_KEY_NAME:-"feeder"}
+
     echo "🧹 Removing existing key if any..."
     (echo y; echo y) | kiichaind keys delete "$FEEDER_KEY_NAME" --keyring-backend "$KEYRING_BACKEND" 2>/dev/null || true
 
