@@ -19,7 +19,7 @@ mkdir -p "$LOCAL_PATH"
 # 2. Clone the repo to a temp dir if not already present
 TEMP_CLONE_DIR="/tmp/price-feeder-setup-$$"
 echo "⬇️ Cloning price-feeder repo to temp dir..."
-git clone git@github.com:KiiChain/price-feeder.git "$TEMP_CLONE_DIR"
+git clone https://github.com/KiiChain/price-feeder.git "$TEMP_CLONE_DIR"
 
 # 3. Copy example config
 CONFIG_PATH="$LOCAL_PATH/config.toml"
