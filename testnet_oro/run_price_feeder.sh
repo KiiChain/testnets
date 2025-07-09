@@ -116,7 +116,7 @@ EOF
 echo "🚀 Starting service..."
 sudo systemctl daemon-reload
 sudo systemctl enable $SERVICE_NAME.service
-sudo systemctl start $SERVICE_NAME.service
+sudo systemctl restart $SERVICE_NAME.service
 sudo systemctl restart systemd-journald
 
 # 14. Cleanup
