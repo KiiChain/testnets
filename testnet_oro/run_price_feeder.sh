@@ -68,11 +68,11 @@ if [[ "$SETUP_FEEDER" =~ ^[Yy]$ ]]; then
     echo "$MNEMONIC"
 
     echo "🗳️ Setting feeder delegation..."
-    echo "$KEYRING_PASSWORD" | kiichaind tx oracle set-feeder "$DELEGATE_ADDRESS" --from "$VALIDATOR_ACCOUNT_NAME" --gas auto --gas-adjustment 1.5 --gas-prices 100000000000akii --keyring-backend "$KEYRING_BACKEND" -y
+    echo "$KEYRING_PASSWORD" | kiichaind tx oracle set-feeder "$DELEGATE_ADDRESS" --from "$VALIDATOR_ACCOUNT_NAME" --gas auto --gas-adjustment 2.0 --gas-prices 100000000000akii --keyring-backend "$KEYRING_BACKEND" -y
     sleep 5
 
     echo "💰 Sending tokens to the feeder..."
-    echo "$KEYRING_PASSWORD" | kiichaind tx bank send "$VALIDATOR_ACCOUNT_NAME" "$DELEGATE_ADDRESS" 1000000000000000000akii --gas auto --gas-adjustment 1.5 --gas-prices 100000000000akii --keyring-backend "$KEYRING_BACKEND" -y
+    echo "$KEYRING_PASSWORD" | kiichaind tx bank send "$VALIDATOR_ACCOUNT_NAME" "$DELEGATE_ADDRESS" 1000000000000000000akii --gas auto --gas-adjustment 2.0 --gas-prices 100000000000akii --keyring-backend "$KEYRING_BACKEND" -y
     sleep 5
 else
   read -p "Enter the existing delegated feeder address: " DELEGATE_ADDRESS
