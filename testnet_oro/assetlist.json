@@ -60,6 +60,37 @@
         "dst_channel": "channel-3",
         "src_channel": "channel-485"
       }
+    },
+    {
+      "description": "RWA Token: Fiore Apartments",
+      "denom_units": [
+        {
+          "denom": "cw20:kii1c0zky2df0f2wt8yxet4l0xv70rjh4rglazftfs3ge0mkrkkrvknq8uatyg",
+          "exponent": 0
+        },
+        {
+          "denom": "idunn",
+          "exponent": 6
+        }
+      ],
+      "base": "cw20:kii1c0zky2df0f2wt8yxet4l0xv70rjh4rglazftfs3ge0mkrkkrvknq8uatyg",
+      "name": "Hotel IDUNN",
+      "display": "idunn",
+      "symbol": "IDUNN",
+      "logo_uris": {
+        "png": "https://kiichain.io/images/rwa/apt-front.webp"
+      },
+      "images": [
+        {
+          "png": "https://kiichain.io/images/rwa/apt-front.webp"
+        }
+      ],
+      "keywords": ["RWA", "Real Estate", "Commertial"],
+      "extensions": {
+        "type": "rwa",
+        "total_tokens": "6500000",
+        "contract_address": "kii1c0zky2df0f2wt8yxet4l0xv70rjh4rglazftfs3ge0mkrkkrvknq8uatyg"
+      }
     }
   ]
 }
