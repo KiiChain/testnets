@@ -62,10 +62,10 @@
       }
     },
     {
-      "description": "RWA Token: Fiore Apartments",
+      "description": "Tokenized stake in the IDUNN Hotel Project by Green Nexux Engineering & Construction S.A.S.",
       "denom_units": [
         {
-          "denom": "cw20:kii1c0zky2df0f2wt8yxet4l0xv70rjh4rglazftfs3ge0mkrkkrvknq8uatyg",
+          "denom": "rwa:kii1c0zky2df0f2wt8yxet4l0xv70rjh4rglazftfs3ge0mkrkkrvknq8uatyg",
           "exponent": 0
         },
         {
@@ -73,7 +73,7 @@
           "exponent": 6
         }
       ],
-      "base": "cw20:kii1c0zky2df0f2wt8yxet4l0xv70rjh4rglazftfs3ge0mkrkkrvknq8uatyg",
+      "base": "rwa:kii1c0zky2df0f2wt8yxet4l0xv70rjh4rglazftfs3ge0mkrkkrvknq8uatyg",
       "name": "Hotel IDUNN",
       "display": "idunn",
       "symbol": "IDUNN",
