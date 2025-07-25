@@ -1,0 +1,26 @@
+{
+    "messages": [
+        {
+            "@type": "/kiichain.rewards.v1beta1.MsgChangeSchedule",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "schedule": {
+                "total_amount": {
+                    "denom": "akii",
+                    "amount": "1000000000000000000000000"
+                },
+                "released_amount": {
+                    "denom": "akii",
+                    "amount": "0"
+                },
+                "end_time": "2025-08-11T00:00:00.00Z",
+                "last_release_time": "0001-01-01T00:00:00Z",
+                "active": true
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "10000000000000000000akii",
+    "title": "Add first kii distribution",
+    "summary": "Create a schedule to distribute kii until august 11",
+    "expedited": false
+}
