@@ -1,10 +1,10 @@
-# Kiichain Testnets
+# KiiChain Testnets
 
-This repository stores information about the Kiichain Testnets.
+This repository stores information about the KiiChain Testnets.
 
 Here you will find information such as:
 
-- Gensisis file
+- Genesis file
 - Onboarding scripts
 - General chain information
 
@@ -52,7 +52,7 @@ You can get tokens to our Testnet Oro by using our Explorer app:
 
 - [KiiChain Explorer Faucet](https://explorer.kiichain.io/wallet/accounts)
 
-Our through our Discord channel:
+Or through our Discord channel:
 
 - [Discord Kiichain Invitation](https://discord.com/invite/kiichain)
 
