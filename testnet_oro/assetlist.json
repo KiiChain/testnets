@@ -65,7 +65,7 @@
       "description": "Tokenized stake in the IDUNN Hotel Project by Green Nexux Engineering & Construction S.A.S.",
       "denom_units": [
         {
-          "denom": "rwa:kii1c0zky2df0f2wt8yxet4l0xv70rjh4rglazftfs3ge0mkrkkrvknq8uatyg",
+          "denom": "rwa:kii10sc5nz5wxw3kwvzf8pa9klavyx2qe9jg36pv335djdu5te8pa7mssw22pq",
           "exponent": 0
         },
         {
@@ -73,7 +73,7 @@
           "exponent": 6
         }
       ],
-      "base": "rwa:kii1c0zky2df0f2wt8yxet4l0xv70rjh4rglazftfs3ge0mkrkkrvknq8uatyg",
+      "base": "rwa:kii10sc5nz5wxw3kwvzf8pa9klavyx2qe9jg36pv335djdu5te8pa7mssw22pq",
       "name": "Hotel IDUNN",
       "display": "idunn",
       "symbol": "IDUNN",
@@ -83,13 +83,108 @@
       "images": [
         {
           "png": "https://kiichain.io/images/rwa/apt-front.webp"
+        },
+        {
+          "png": "https://kiichain.io/images/rwa/apt-pool.webp"
+        },
+        {
+          "png": "https://kiichain.io/images/rwa/lobby.webp"
+        },
+        {
+          "png": "https://kiichain.io/images/rwa/coworking.webp"
         }
       ],
-      "keywords": ["RWA", "Real Estate", "Commertial"],
+      "keywords": ["Residential", "RWA"],
       "extensions": {
         "type": "rwa",
         "total_tokens": "6500000",
-        "contract_address": "kii1c0zky2df0f2wt8yxet4l0xv70rjh4rglazftfs3ge0mkrkkrvknq8uatyg"
+        "contract_address": "kii10sc5nz5wxw3kwvzf8pa9klavyx2qe9jg36pv335djdu5te8pa7mssw22pq",
+        "pair_address": "kii1m4padgc2uupfdqgae7p35elwdfz292nfrsctcgefr3u7hpw3rrfqnfg32j",
+        "liquidity_address": "kii1knce289lywm683wys2saut2xghtvy3wphzksy4mkn7j4m09zr85swl6pfr",
+        "location": "Bogotá D.C - Colombia",
+        "total_shares": 1200
+      }
+    },
+    {
+      "description": "Tokenized investment in a gold mining operation, offering exposure to real-world commodity assets with high return potential and physical backing.",
+      "denom_units": [
+        {
+          "denom": "rwa:kii1qv9eqkl0gkq4t0p9cnuskj5l2xggwtryun3m5nt28eu2d67avfvqrqx9x2",
+          "exponent": 0
+        },
+        {
+          "denom": "equi",
+          "exponent": 6
+        }
+      ],
+      "base": "rwa:kii1qv9eqkl0gkq4t0p9cnuskj5l2xggwtryun3m5nt28eu2d67avfvqrqx9x2",
+      "name": "GoldMine Capital on 0xEquity",
+      "display": "equi",
+      "symbol": "EQUI",
+      "logo_uris": {
+        "png": "https://kiichain.io/images/rwa/gold_line.webp"
+      },
+      "images": [
+        {
+          "png": "https://kiichain.io/images/rwa/gold_carrying.webp"
+        },
+        {
+          "png": "https://kiichain.io/images/rwa/gold_belt.webp"
+        },
+        {
+          "png": "https://kiichain.io/images/rwa/gold_car.webp"
+        }
+      ],
+      "keywords": ["Industrial", "RWA"],
+      "extensions": {
+        "type": "rwa",
+        "total_tokens": "9000000",
+        "contract_address": "kii1qv9eqkl0gkq4t0p9cnuskj5l2xggwtryun3m5nt28eu2d67avfvqrqx9x2",
+        "pair_address": "kii1k8fqs56uf0nmv3h3cyxvqah5w2s6q2ks3k5xwt65up3c25vk96rqdh4kh7",
+        "liquidity_address": "kii1xum7207w5a6uxjypk86t523g0pj933l8y9vmky4llwxdjr2624jsvj6tw3",
+        "location": "Quebec - Canada",
+        "total_shares": 1200
+      }
+    },
+    {
+      "description": "Apartment tower with panoramic views and high-quality finishes, designed for upper-middle-class families in a growing residential zone.",
+      "denom_units": [
+        {
+          "denom": "rwa:kii16yjgn8twvgq0x6uq59rahzr2u68clr3welf40synzlq32zsdgjjq8kqln2",
+          "exponent": 0
+        },
+        {
+          "denom": "dec",
+          "exponent": 6
+        }
+      ],
+      "base": "rwa:kii16yjgn8twvgq0x6uq59rahzr2u68clr3welf40synzlq32zsdgjjq8kqln2",
+      "name": "Coast Residences tokenized on Decentral",
+      "display": "dec",
+      "symbol": "DEC",
+      "logo_uris": {
+        "png": "https://kiichain.io/images/rwa/coast_building.webp"
+      },
+      "images": [
+        {
+          "png": "https://kiichain.io/images/rwa/coast_kitchen.webp"
+        },
+        {
+          "png": "https://kiichain.io/images/rwa/coast_room.webp"
+        },
+        {
+          "png": "https://kiichain.io/images/rwa/coast_balcony.webp"
+        }
+      ],
+      "keywords": ["RWA", "Residential"],
+      "extensions": {
+        "type": "rwa",
+        "total_tokens": "9200000",
+        "contract_address": "kii16yjgn8twvgq0x6uq59rahzr2u68clr3welf40synzlq32zsdgjjq8kqln2",
+        "pair_address": "kii16tt6nkqfruq2e9q2k8pfvytezergxan79kjy600dju05w6pyanlshdqh2z",
+        "liquidity_address": "kii1se2guyvy2dgfvc230shlhmn80ny3fjj6q3n2t59xf2qhks6wpguqc7ey2n",
+        "location": "Miami - United States",
+        "total_shares": 1200
       }
     }
   ]
