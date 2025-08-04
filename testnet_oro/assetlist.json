@@ -102,7 +102,7 @@
         "pair_address": "kii1m4padgc2uupfdqgae7p35elwdfz292nfrsctcgefr3u7hpw3rrfqnfg32j",
         "liquidity_address": "kii1knce289lywm683wys2saut2xghtvy3wphzksy4mkn7j4m09zr85swl6pfr",
         "location": "Bogotá D.C - Colombia",
-        "total_shares": 1200
+        "total_shares": "1200"
       }
     },
     {
@@ -143,7 +143,7 @@
         "pair_address": "kii1k8fqs56uf0nmv3h3cyxvqah5w2s6q2ks3k5xwt65up3c25vk96rqdh4kh7",
         "liquidity_address": "kii1xum7207w5a6uxjypk86t523g0pj933l8y9vmky4llwxdjr2624jsvj6tw3",
         "location": "Quebec - Canada",
-        "total_shares": 1200
+        "total_shares": "1200"
       }
     },
     {
@@ -184,7 +184,7 @@
         "pair_address": "kii16tt6nkqfruq2e9q2k8pfvytezergxan79kjy600dju05w6pyanlshdqh2z",
         "liquidity_address": "kii1se2guyvy2dgfvc230shlhmn80ny3fjj6q3n2t59xf2qhks6wpguqc7ey2n",
         "location": "Miami - United States",
-        "total_shares": 1200
+        "total_shares": "1200"
       }
     }
   ]
