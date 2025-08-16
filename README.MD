@@ -1,7 +1,3 @@
-Here’s your revised document with a **description of changes** section added at the top, summarizing what was fixed or updated:
-
----
-
 # KiiChain Testnets
 
 **Description of Changes:**
