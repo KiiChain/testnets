@@ -1,0 +1,19 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.evm.erc20.v1.MsgRegisterERC20",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "erc20addresses": [
+                "0x1A9992f48dE81C57D38147F3c573E84575021de6",
+                "0xb72FfA8E8079365c1890948464B542E42EEC892B",
+                "0x7806BbEf4F5aba0Bd0e96139EeEb2DF88E7839e5",
+                "0xd6cb60d65f1331e1C9e70213d7a5bB1E60438CBc"
+            ]
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "10000000000000000000akii",
+    "title": "Register ERC20 tokens on KiiChain Testnet Oro",
+    "summary": "Register ERC20 tokens on KiiChain Testnet Oro. Registered tokens include USDT, USDC, WBTC, and XAUt.",
+    "expedited": false
+}
