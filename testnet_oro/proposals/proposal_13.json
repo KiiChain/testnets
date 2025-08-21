@@ -1,0 +1,38 @@
+{
+    "messages": [
+        {
+            "@type": "/kiichain.feeabstraction.v1beta1.MsgUpdateFeeTokens",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "fee_tokens": {
+                "items": [
+                    {
+                        "denom": "erc20/0x1A9992f48dE81C57D38147F3c573E84575021de6",
+                        "oracle_denom": "uusdt",
+                        "decimals": 6,
+                        "price": "1.0",
+                        "enabled": true
+                    },
+                    {
+                        "denom": "erc20/0xb72FfA8E8079365c1890948464B542E42EEC892B",
+                        "oracle_denom": "uusdc",
+                        "decimals": 6,
+                        "price": "1.0",
+                        "enabled": true
+                    },
+                    {
+                        "denom": "erc20/0x7806BbEf4F5aba0Bd0e96139EeEb2DF88E7839e5",
+                        "oracle_denom": "ubtc",
+                        "decimals": 8,
+                        "price": "1.0",
+                        "enabled": true
+                    }
+                ]
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "10000000000000000000akii",
+    "title": "Register USDT, USDC and WBTC as fee tokens on KiiChain Testnet Oro",
+    "summary": "Register USDT, USDC and WBTC as fee tokens on KiiChain Testnet Oro",
+    "expedited": false
+}
