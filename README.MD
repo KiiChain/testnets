@@ -52,6 +52,18 @@ You can get tokens to our Testnet Oro by using our Explorer app:
 
 - [KiiChain Explorer Faucet](https://explorer.kiichain.io/wallet/accounts)
 
+## Troubleshooting Swap / Transaction Failures on KIIDEX
+
+If you encounter a **failed transaction or swap** on [KIIDEX](https://kiidex.kiichain.io/), one possible cause is an incorrect **transaction Nonce**.  
+
+### How to Fix Nonce Issues
+1. When a transaction fails, check the **suggested Nonce** from the error message or wallet prompt.  
+2. Manually set the Nonce value as suggested. For example:  
+   - If the error suggests **Nonce = 1**, then manually update the Nonce to `1`.  
+3. Confirm and resend the transaction.  
+
+This adjustment ensures the transaction is processed in the correct sequence by the network.  
+
 Or through our Discord channel:
 
 - [Discord Kiichain Invitation](https://discord.com/invite/kiichain)
