@@ -1,0 +1,15 @@
+{
+  "messages": [
+    {
+      "@type": "/ibc.core.client.v1.MsgRecoverClient",
+      "subject_client_id": "07-tendermint-3",
+      "substitute_client_id": "07-tendermint-4",
+      "signer": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv"
+    }
+  ],
+  "metadata": "",
+  "deposit": "10000000000000000000akii",
+  "title": "Rescue IBC Client to Provider",
+  "summary": "This proposal will rescue an expired IBC client to Cosmos testnet Provider",
+  "expedited": false
+}
