@@ -130,7 +130,7 @@ echo "After=network-online.target"                       | sudo tee /etc/systemd
 echo ""                                                  | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "[Service]"                                         | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "User=$USER"                                        | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
-echo "ExecStart=$HOME/go/bin/cosmovisor run start --x-crisis-skip-assert-invariants --home $NODE_HOME --chain-id $CHAIN_ID" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
+echo "ExecStart=$HOME/go/bin/cosmovisor run start --home $NODE_HOME --chain-id $CHAIN_ID" | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "Restart=always"                                    | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "RestartSec=3"                                      | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
 echo "LimitNOFILE=50000"                                 | sudo tee /etc/systemd/system/$SERVICE_NAME.service -a
