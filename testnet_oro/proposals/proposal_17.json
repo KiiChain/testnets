@@ -1,0 +1,41 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.evm.vm.v1.MsgUpdateParams",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "params": {
+                "evm_denom": "akii",
+                "extra_eips": [],
+                "allow_unprotected_txs": false,
+                "evm_channels": [],
+                "access_control": {
+                    "create": {
+                        "access_type": "ACCESS_TYPE_PERMISSIONLESS",
+                        "access_control_list": []
+                    },
+                    "call": {
+                        "access_type": "ACCESS_TYPE_PERMISSIONLESS",
+                        "access_control_list": []
+                    }
+                },
+                "active_static_precompiles": [
+                    "0x0000000000000000000000000000000000000100",
+                    "0x0000000000000000000000000000000000000400",
+                    "0x0000000000000000000000000000000000000800",
+                    "0x0000000000000000000000000000000000000801",
+                    "0x0000000000000000000000000000000000000802",
+                    "0x0000000000000000000000000000000000000803",
+                    "0x0000000000000000000000000000000000000804",
+                    "0x0000000000000000000000000000000000000805",
+                    "0x0000000000000000000000000000000000001002",
+                    "0x0000000000000000000000000000000000001003"
+                ]
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "10000000000000000000akii",
+    "title": "Remove the Wasm precompile from EVM",
+    "summary": "Remove the Wasm precompile from EVM to prevent security issues",
+    "expedited": false
+}
