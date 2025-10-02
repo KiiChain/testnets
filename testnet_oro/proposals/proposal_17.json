@@ -27,6 +27,7 @@
                     "0x0000000000000000000000000000000000000803",
                     "0x0000000000000000000000000000000000000804",
                     "0x0000000000000000000000000000000000000805",
+                    "0x0000000000000000000000000000000000000806",
                     "0x0000000000000000000000000000000000001002",
                     "0x0000000000000000000000000000000000001003"
                 ]
@@ -35,7 +36,7 @@
     ],
     "metadata": "ipfs://CID",
     "deposit": "10000000000000000000akii",
-    "title": "Remove the Wasm precompile from EVM",
-    "summary": "Remove the Wasm precompile from EVM to prevent security issues",
+    "title": "Remove the Wasm precompile and add the Slashing precompile on EVM",
+    "summary": "This proposal removes the Wasm precompile (0x0000000000000000000000000000000000001001) from the active EVM precompiles to prevent potential security risks, and adds the Slashing precompile (0x0000000000000000000000000000000000000806) to enable slashing functionality in the EVM.",
     "expedited": false
 }
