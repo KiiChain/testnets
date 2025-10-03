@@ -186,6 +186,356 @@
         "location": "Miami - United States",
         "total_shares": "1200"
       }
+    },
+    {
+      "description": "Tokenized exposure to Brent Crude oil markets, allowing investors to gain synthetic access to global energy commodities.",
+      "denom_units": [
+        {
+          "denom": "rwa:kii1evfsxv0zyhk25390mg2ck44nrsu5ru8x76m84eqthqaa5qejyc3q92pfex",
+          "exponent": 0
+        },
+        {
+          "denom": "ice",
+          "exponent": 6
+        }
+      ],
+      "base": "rwa:kii16yjgn8twvgq0x6uq59rahzr2u68clr3welf40synzlq32zsdgjjq8kqln2",
+      "name": "Brent Crude Oil Futures",
+      "display": "ice",
+      "symbol": "ICE",
+      "logo_uris": {
+        "png": "https://kiichain.io/images/rwa/Energy_BrentCrude.webp"
+      },
+      "images": [
+        {
+          "png": "https://kiichain.io/images/rwa/Energy_BrentCrude.webp"
+        }
+      ],
+      "keywords": ["RWA", "Industrial"],
+      "extensions": {
+        "type": "rwa",
+        "total_tokens": "5000000",
+        "contract_address": "kii1evfsxv0zyhk25390mg2ck44nrsu5ru8x76m84eqthqaa5qejyc3q92pfex",
+        "pair_address": "kii17ykz5k26fzg0808knarpgg2tdxxxfmefuh9mydusqyfkr3vtdvysqcygux",
+        "liquidity_address": "kii1kgcncgvwavgt8yz7hrktzjwws3pd2xx2sdrpp4atnwppzpmsxt7s9a3zaf",
+        "location": "North Sea - Global Benchmark",
+        "total_shares": "5000"
+      }
+    },
+    {
+      "description": "Tokenized stake in West Texas Intermediate oil contracts, offering a liquid and accessible energy asset.",
+      "denom_units": [
+        {
+          "denom": "rwa:kii17f75z30v5ph7y5uv38gwzlyetr348ct4pwm9ycvl5r44fpjvm0tqdq9a3w",
+          "exponent": 0
+        },
+        {
+          "denom": "cme-nymex",
+          "exponent": 6
+        }
+      ],
+      "base": "rwa:kii17f75z30v5ph7y5uv38gwzlyetr348ct4pwm9ycvl5r44fpjvm0tqdq9a3w",
+      "name": "WTI Crude Oil Futures",
+      "display": "cme-nymex",
+      "symbol": "CME-NYMEX",
+      "logo_uris": {
+        "png": "https://kiichain.io/images/rwa/energy_WTICrude.webp"
+      },
+      "images": [
+        {
+          "png": "https://kiichain.io/images/rwa/energy_WTICrude.webp"
+        }
+      ],
+      "keywords": ["RWA", "Industrial"],
+      "extensions": {
+        "type": "rwa",
+        "total_tokens": "7000000",
+        "contract_address": "kii17f75z30v5ph7y5uv38gwzlyetr348ct4pwm9ycvl5r44fpjvm0tqdq9a3w",
+        "pair_address": "kii1y48er4pv9mju626yaphj5n8lw8hc7a7l5rmq0t29nlxcx8l06h0q580h3j",
+        "liquidity_address": "kii1mwxaad8vs7wx439antfhl392gct2f6z4xvmp8k0tn7suk4wpkt7qhp5fmc",
+        "location": "Texas - United States",
+        "total_shares": "7000"
+      }
+    },
+    {
+      "description": "Tokenized exposure to gold futures, providing investors with a hedge against inflation and a store of value.",
+      "denom_units": [
+        {
+          "denom": "rwa:kii17s0fvu5kyt0sqwkj6jm4uwc7ly237f8ap3wt4fs3n5zvc2mlfdasrjx6mh",
+          "exponent": 0
+        },
+        {
+          "denom": "gold-comex",
+          "exponent": 6
+        }
+      ],
+      "base": "rwa:kii17s0fvu5kyt0sqwkj6jm4uwc7ly237f8ap3wt4fs3n5zvc2mlfdasrjx6mh",
+      "name": "Gold Commodities Futures",
+      "display": "gold-comex",
+      "symbol": "GOLD-COMEX",
+      "logo_uris": {
+        "png": "https://kiichain.io/images/rwa/metals_Gold.webp"
+      },
+      "images": [
+        {
+          "png": "https://kiichain.io/images/rwa/metals_Gold.webp"
+        }
+      ],
+      "keywords": ["RWA", "Commercial"],
+      "extensions": {
+        "type": "rwa",
+        "total_tokens": "8000000",
+        "contract_address": "kii17s0fvu5kyt0sqwkj6jm4uwc7ly237f8ap3wt4fs3n5zvc2mlfdasrjx6mh",
+        "pair_address": "kii1ptkzdh457xc8x6qjykuk5l7fx86x8n0k5840q2vpsl0skhvap6ds2lt46j",
+        "liquidity_address": "kii1fg2sgpdj2nzapwdchpprruvhmep5az6y5k4fv000peunn04vf2lsqtm3kx",
+        "location": "New York - United States",
+        "total_shares": "8000"
+      }
+    },
+    {
+      "description": "Tokenized silver futures contract, diversifying investor portfolios with exposure to industrial and precious metals.",
+      "denom_units": [
+        {
+          "denom": "rwa:kii17pw3kmss3malanf7s45tf5wxcq6u5eyas76lgsrnf2hd4s0zfx8qmqm06r",
+          "exponent": 0
+        },
+        {
+          "denom": "silver-comex",
+          "exponent": 6
+        }
+      ],
+      "base": "rwa:kii17pw3kmss3malanf7s45tf5wxcq6u5eyas76lgsrnf2hd4s0zfx8qmqm06r",
+      "name": "Silver Commodities Futures",
+      "display": "silver-comex",
+      "symbol": "Silver-COMEX",
+      "logo_uris": {
+        "png": "https://kiichain.io/images/rwa/metals_Silver.webp"
+      },
+      "images": [
+        {
+          "png": "https://kiichain.io/images/rwa/metals_Silver.webp"
+        }
+      ],
+      "keywords": ["RWA", "Commercial"],
+      "extensions": {
+        "type": "rwa",
+        "total_tokens": "6000000",
+        "contract_address": "kii17pw3kmss3malanf7s45tf5wxcq6u5eyas76lgsrnf2hd4s0zfx8qmqm06r",
+        "pair_address": "kii15338dwgj5wm2tuahvfjdldz5s8hmt7l5aznw8jz9s2mmgj5c52jqau703j",
+        "liquidity_address": "kii1n3z8skwh08z6nyg6zgf3ha3qpu5w42d53z4dvnhexewtr3wzqcjsyer6rg",
+        "location": "Chicago - United States",
+        "total_shares": "6000"
+      }
+    },
+    {
+      "description": "Tokenized corn futures offering direct access to agricultural markets, supporting food production exposure.",
+      "denom_units": [
+        {
+          "denom": "rwa:kii1kyujdkkry0dj40kkcqgcsv8pmv6rh288cjm8l4vk2z5zamcxv3hqrwe2zd",
+          "exponent": 0
+        },
+        {
+          "denom": "corn-cbot",
+          "exponent": 6
+        }
+      ],
+      "base": "rwa:kii1kyujdkkry0dj40kkcqgcsv8pmv6rh288cjm8l4vk2z5zamcxv3hqrwe2zd",
+      "name": "Corn Futures",
+      "display": "corn-cbot",
+      "symbol": "Corn-CBOT",
+      "logo_uris": {
+        "png": "https://kiichain.io/images/rwa/Grains&oliseeds_Corn.webp"
+      },
+      "images": [
+        {
+          "png": "https://kiichain.io/images/rwa/Grains&oliseeds_Corn.webp"
+        }
+      ],
+      "keywords": ["RWA", "Commercial"],
+      "extensions": {
+        "type": "rwa",
+        "total_tokens": "4000000",
+        "contract_address": "kii1kyujdkkry0dj40kkcqgcsv8pmv6rh288cjm8l4vk2z5zamcxv3hqrwe2zd",
+        "pair_address": "kii1tlqrnxa7v076e5zvutslpaqlcwwc5063j2jf6tgn5querdw8qyyq0n4dg8",
+        "liquidity_address": "kii1yf82x6gn84hnkhgfvwxkfxf5tndltkjzd8g8pu0ldehu7ctf2k6s2980at",
+        "location": "Illinois - United States",
+        "total_shares": "4000"
+      }
+    },
+    {
+      "description": "Tokenized soybeans futures contract, linking investors to one of the world’s largest agricultural commodities.",
+      "denom_units": [
+        {
+          "denom": "rwa:kii14zyhqvfqdrjfa3fwkczx04lzf2wq43aqc5kz70qv3dwar42lsgtsae00rs",
+          "exponent": 0
+        },
+        {
+          "denom": "soybeans",
+          "exponent": 6
+        }
+      ],
+      "base": "rwa:kii14zyhqvfqdrjfa3fwkczx04lzf2wq43aqc5kz70qv3dwar42lsgtsae00rs",
+      "name": "Soybeans Futures",
+      "display": "soybeans",
+      "symbol": "Soybeans",
+      "logo_uris": {
+        "png": "https://kiichain.io/images/rwa/Grains&oliseeds_Soybeans.webp"
+      },
+      "images": [
+        {
+          "png": "https://kiichain.io/images/rwa/Grains&oliseeds_Soybeans.webp"
+        }
+      ],
+      "keywords": ["RWA", "Commercial"],
+      "extensions": {
+        "type": "rwa",
+        "total_tokens": "3500000",
+        "contract_address": "kii14zyhqvfqdrjfa3fwkczx04lzf2wq43aqc5kz70qv3dwar42lsgtsae00rs",
+        "pair_address": "kii1weg7xj3tcqvvn75m522nnw4mpe0qx047fextyhxxpqv7ydhfra6s55f38l",
+        "liquidity_address": "kii1ny8k7htjsgw484qmtur4xymwc5srsen730pq54px0n663zp392xsx7sk70",
+        "location": "Iowa - United States",
+        "total_shares": "3500"
+      }
+    },
+    {
+      "description": "Tokenized sugar futures contracts, exposing investors to a key soft commodity in global food markets.",
+      "denom_units": [
+        {
+          "denom": "rwa:kii13qd5dsezg2g9wm3msg7zrnsh5pvxxtqvf09j89kuj5690y38lm6sx40j34",
+          "exponent": 0
+        },
+        {
+          "denom": "sugar-ice",
+          "exponent": 6
+        }
+      ],
+      "base": "rwa:kii13qd5dsezg2g9wm3msg7zrnsh5pvxxtqvf09j89kuj5690y38lm6sx40j34",
+      "name": "Sugar No. 11 Futures",
+      "display": "sugar-ice",
+      "symbol": "Sugar-ICE",
+      "logo_uris": {
+        "png": "https://kiichain.io/images/rwa/Soft-tropical_Sugar.webp"
+      },
+      "images": [
+        {
+          "png": "https://kiichain.io/images/rwa/Soft-tropical_Sugar.webp"
+        }
+      ],
+      "keywords": ["RWA", "Commercial"],
+      "extensions": {
+        "type": "rwa",
+        "total_tokens": "4500000",
+        "contract_address": "kii13qd5dsezg2g9wm3msg7zrnsh5pvxxtqvf09j89kuj5690y38lm6sx40j34",
+        "pair_address": "kii1wc67ez4lvhwc05e4ad9f4aaxq07dgqrz0fpkjt5fa59w2cyjtj7qvfmqc6",
+        "liquidity_address": "kii183pjxk0nqcht5s65p9mp20xtywezp08v76337vqg6hzlzfxg9rqssua48t",
+        "location": "Brazil",
+        "total_shares": "4500"
+      }
+    },
+    {
+      "description": "Tokenized Arabica coffee contracts, representing one of the most traded tropical commodities worldwide.",
+      "denom_units": [
+        {
+          "denom": "rwa:kii1d2mu9suq2xajpyatmz9px3ra6t4rzkf0feqg2f4xm708fklfnglq2lg46z",
+          "exponent": 0
+        },
+        {
+          "denom": "coffee-ice",
+          "exponent": 6
+        }
+      ],
+      "base": "rwa:kii1d2mu9suq2xajpyatmz9px3ra6t4rzkf0feqg2f4xm708fklfnglq2lg46z",
+      "name": "Arabica Coffee Futures",
+      "display": "coffee-ice",
+      "symbol": "Coffee-ICE",
+      "logo_uris": {
+        "png": "https://kiichain.io/images/rwa/Soft-tropical_coffee.webp"
+      },
+      "images": [
+        {
+          "png": "https://kiichain.io/images/rwa/Soft-tropical_coffee.webp"
+        }
+      ],
+      "keywords": ["RWA", "Commercial"],
+      "extensions": {
+        "type": "rwa",
+        "total_tokens": "3000000",
+        "contract_address": "kii1d2mu9suq2xajpyatmz9px3ra6t4rzkf0feqg2f4xm708fklfnglq2lg46z",
+        "pair_address": "kii15c2uzmv9all3zhrsfgzjvehzylsghc9pqgj64tk7cav687u26hvscnal28",
+        "liquidity_address": "kii1gu2t76zajmtyva40aewck7p6s34f762kts545q87dev2nk6pgm6stzxj6x",
+        "location": "Colombia",
+        "total_shares": "3000"
+      }
+    },
+    {
+      "description": "Tokenized futures on live cattle, providing investors with exposure to livestock and agricultural commodity markets.",
+      "denom_units": [
+        {
+          "denom": "rwa:kii1kp3ke9v69ysg5krt3qkc06xuthshj5zfywf7zd3jd3sa4tm0c82sakqz5k",
+          "exponent": 0
+        },
+        {
+          "denom": "cme",
+          "exponent": 6
+        }
+      ],
+      "base": "rwa:kii1kp3ke9v69ysg5krt3qkc06xuthshj5zfywf7zd3jd3sa4tm0c82sakqz5k",
+      "name": "Live Cattle Futures",
+      "display": "cme",
+      "symbol": "CME",
+      "logo_uris": {
+        "png": "https://kiichain.io/images/rwa/Livestock.webp"
+      },
+      "images": [
+        {
+          "png": "https://kiichain.io/images/rwa/Livestock.webp"
+        }
+      ],
+      "keywords": ["RWA", "Commercial"],
+      "extensions": {
+        "type": "rwa",
+        "total_tokens": "2500000",
+        "contract_address": "kii1kp3ke9v69ysg5krt3qkc06xuthshj5zfywf7zd3jd3sa4tm0c82sakqz5k",
+        "pair_address": "kii1dv42j702g3h74tmgun5ys5yxvg5ucpegglgj68auv66mjx85r5rsf7nva9",
+        "liquidity_address": "kii1kvjvkzzf7xs8jpfw0skcxr7a76sqz9rucy4yh54x0ygghf75z0fstlww72",
+        "location": "Texas - United States",
+        "total_shares": "2500"
+      }
+    },
+    {
+      "description": "Tokenized exposure to iron ore markets, representing one of the most essential raw materials in steelmaking.",
+      "denom_units": [
+        {
+          "denom": "rwa:kii1h3r35dmykvz793afgrxc2j60nct46sa5wlpqaztx8hyw6shuz2nseyxugw",
+          "exponent": 0
+        },
+        {
+          "denom": "iron",
+          "exponent": 6
+        }
+      ],
+      "base": "rwa:kii1h3r35dmykvz793afgrxc2j60nct46sa5wlpqaztx8hyw6shuz2nseyxugw",
+      "name": "Iron Ore Futures",
+      "display": "iron",
+      "symbol": "IRON",
+      "logo_uris": {
+        "png": "https://kiichain.io/images/rwa/ironOre.webp"
+      },
+      "images": [
+        {
+          "png": "https://kiichain.io/images/rwa/ironOre.webp"
+        }
+      ],
+      "keywords": ["RWA", "Industrial"],
+      "extensions": {
+        "type": "rwa",
+        "total_tokens": "6000000",
+        "contract_address": "kii1h3r35dmykvz793afgrxc2j60nct46sa5wlpqaztx8hyw6shuz2nseyxugw",
+        "pair_address": "kii1j8wfxaall2yalln6ulhdc3qu9m2uyapgejyhty5w3l799938r7cs8dwj3l",
+        "liquidity_address": "kii1ckzl5gmp3vuw2hv9juq722gh3shuz9knncnl0slwe58ytn4783yqh9dy78",
+        "location": "Australia",
+        "total_shares": "6000"
+      }
     }
   ]
 }
