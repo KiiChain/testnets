@@ -1,0 +1,21 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.staking.v1beta1.MsgUpdateParams",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "params": {
+                "unbonding_time": "604800s",
+                "max_validators": 55,
+                "max_entries": 7,
+                "historical_entries": 10000,
+                "bond_denom": "akii",
+                "min_commission_rate": "0.050000000000000000"
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "10000000000000000000akii",
+    "title": "Increase max validators to 55",
+    "summary": "Increase max validators to 55 to allow more validator spots",
+    "expedited": false
+}
