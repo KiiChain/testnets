@@ -126,7 +126,7 @@
     {
       "kind": "custom",
       "url": "https://explorer.kiichain.io/",
-      "account_page": "https://explorer.kiichain.io//account/${accountAddress}"
+      "account_page": "https://explorer.kiichain.io/account/${accountAddress}"
     }
   ],
   "keywords": [
