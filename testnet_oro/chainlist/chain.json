@@ -69,7 +69,7 @@
   "apis": {
     "rpc": [
       {
-        "address": "https://rpc.dos.sentry.testnet.v3.kiivalidator.com/",
+        "address": "https://rpc.uno.sentry.testnet.v3.kiivalidator.com/",
         "provider": "Kiichain"
       },
       {
@@ -79,7 +79,7 @@
     ],
     "rest": [
       {
-        "address": "https://lcd.dos.sentry.testnet.v3.kiivalidator.com/",
+        "address": "https://lcd.uno.sentry.testnet.v3.kiivalidator.com/",
         "provider": "Kiichain"
       },
       {
