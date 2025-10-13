@@ -1,6 +1,6 @@
 {
   "$schema": "../../versions.schema.json",
-  "chain_name": "kiitestnet",
+  "chain_name": "kiitestnetoro",
   "versions": [
     {
       "name": "v5.0.0",
