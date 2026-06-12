@@ -1,0 +1,69 @@
+{
+    "messages": [
+        {
+            "@type": "/ibc.applications.interchain_accounts.host.v1.MsgUpdateParams",
+            "signer": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "params": {
+                "host_enabled": true,
+                "allow_messages": [
+                    "/cosmos.bank.v1beta1.MsgSend",
+                    "/cosmos.bank.v1beta1.MsgMultiSend",
+                    "/cosmos.distribution.v1beta1.MsgSetWithdrawAddress",
+                    "/cosmos.distribution.v1beta1.MsgWithdrawValidatorCommission",
+                    "/cosmos.distribution.v1beta1.MsgFundCommunityPool",
+                    "/cosmos.distribution.v1beta1.MsgWithdrawDelegatorReward",
+                    "/cosmos.gov.v1beta1.MsgVoteWeighted",
+                    "/cosmos.gov.v1beta1.MsgSubmitProposal",
+                    "/cosmos.gov.v1beta1.MsgDeposit",
+                    "/cosmos.gov.v1beta1.MsgVote",
+                    "/cosmos.staking.v1beta1.MsgEditValidator",
+                    "/cosmos.staking.v1beta1.MsgDelegate",
+                    "/cosmos.staking.v1beta1.MsgUndelegate",
+                    "/cosmos.staking.v1beta1.MsgBeginRedelegate",
+                    "/cosmos.staking.v1beta1.MsgCreateValidator",
+                    "/cosmos.vesting.v1beta1.MsgCreateVestingAccount"
+                ]
+            }
+        },
+        {
+            "@type": "/cosmos.evm.vm.v1.MsgUpdateParams",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "params": {
+                "evm_denom": "akii",
+                "extra_eips": [],
+                "evm_channels": [],
+                "access_control": {
+                    "create": {
+                        "access_type": "ACCESS_TYPE_PERMISSIONLESS",
+                        "access_control_list": []
+                    },
+                    "call": {
+                        "access_type": "ACCESS_TYPE_PERMISSIONLESS",
+                        "access_control_list": []
+                    }
+                },
+                "active_static_precompiles": [
+                    "0x0000000000000000000000000000000000000100",
+                    "0x0000000000000000000000000000000000000400",
+                    "0x0000000000000000000000000000000000000800",
+                    "0x0000000000000000000000000000000000000802",
+                    "0x0000000000000000000000000000000000000803",
+                    "0x0000000000000000000000000000000000000804",
+                    "0x0000000000000000000000000000000000000805",
+                    "0x0000000000000000000000000000000000000806",
+                    "0x0000000000000000000000000000000000001002",
+                    "0x0000000000000000000000000000000000001003"
+                ],
+                "history_serve_window": "0",
+                "extended_denom_options": {
+                    "extended_denom": "akii"
+                }
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "10000000000000000000akii",
+    "title": "Restrict ICA Host allow messages and remove distribution precompile",
+    "summary": "Restrict allow messages on IBC ICA Host to prevent potential security risks, and remove the distribution precompile (0x0000000000000000000000000000000000000801) from the EVM active static precompiles.",
+    "expedited": false
+}
