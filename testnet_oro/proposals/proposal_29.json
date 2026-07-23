@@ -1,0 +1,20 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "plan": {
+                "name": "v7.3.0",
+                "time": "0001-01-01T00:00:00Z",
+                "height": "33650000",
+                "info": "",
+                "upgraded_client_state": null
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "10000000000000000000akii",
+    "title": "Upgrade Kiichain Testnet Oro to v7.3.0",
+    "summary": "Upgrade Kiichain Testnet Oro to v7.3.0 (private coordinated Cosmos EVM hotfix via evm-private v0.6.0-fork.3).\n- Release (binaries + checksums): https://github.com/KiiChain/kiichain/releases/tag/v7.3.0\n- linux/amd64 sha256: be366ab7e9508f958267010bfa9bdc5b44957705e1bda5a31cc95b47c4c91dfd\n- Note: cannot build from public source until 1 day after Cosmos EVM public disclosure (July 27, 2026); use attached release binaries.\n- Changelog: https://github.com/KiiChain/kiichain/blob/v7.3.0/CHANGELOG.md",
+    "expedited": false
+}
