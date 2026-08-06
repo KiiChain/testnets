@@ -6,7 +6,7 @@
             "plan": {
                 "name": "v7.3.1",
                 "time": "0001-01-01T00:00:00Z",
-                "height": "34027700",
+                "height": "34095400",
                 "info": "",
                 "upgraded_client_state": null
             }
@@ -15,6 +15,6 @@
     "metadata": "ipfs://CID",
     "deposit": "10000000000000000000akii",
     "title": "Upgrade Kiichain Testnet Oro to v7.3.1",
-    "summary": "Upgrade Kiichain Testnet Oro to v7.3.1.\n- Keeps the gov module account on the bank blocked list so EVM BalanceHandler does not mirror gov deposits into StateDB (fixes Safe → gov precompile deposit failing on commit with unauthorized).\n- Release: https://github.com/KiiChain/kiichain/releases/tag/v7.3.1\n- PR: https://github.com/KiiChain/kiichain/pull/368\n- Changelog: https://github.com/KiiChain/kiichain/blob/v7.3.1/CHANGELOG.md\n- Target time ~2026-08-08T13:53:00Z (~48h lead = 12h voting + ~36h validator staging; measured block time ~2.66s).",
+    "summary": "Upgrade Kiichain Testnet Oro to v7.3.1.\n- Keeps the gov module account on the bank blocked list so EVM BalanceHandler does not mirror gov deposits into StateDB (fixes Safe → gov precompile deposit failing on commit with unauthorized).\n- Release: https://github.com/KiiChain/kiichain/releases/tag/v7.3.1\n- PR: https://github.com/KiiChain/kiichain/pull/368\n- Changelog: https://github.com/KiiChain/kiichain/blob/v7.3.1/CHANGELOG.md\n- Target time ~2026-08-10T14:00:00Z (Monday; moved off Saturday per ops feedback; measured block time ~2.61s).",
     "expedited": false
 }
