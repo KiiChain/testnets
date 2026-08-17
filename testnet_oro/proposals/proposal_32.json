@@ -1,0 +1,17 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.evm.erc20.v1.MsgUpdateParams",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "params": {
+                "enable_erc20": true,
+                "permissionless_registration": false
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "10000000000000000000akii",
+    "title": "Disable permissionless ERC20 registration",
+    "summary": "Disable permissionless ERC20 token pair registration. After this change, only governance can register ERC20 contracts as token pairs. ERC20 conversion remains enabled.",
+    "expedited": false
+}
