@@ -1,0 +1,86 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.gov.v1.MsgUpdateParams",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "params": {
+                "min_deposit": [
+                    {
+                        "denom": "akii",
+                        "amount": "10000000000000000000"
+                    }
+                ],
+                "max_deposit_period": "172800s",
+                "voting_period": "345600s",
+                "quorum": "0.334000000000000000",
+                "threshold": "0.500000000000000000",
+                "veto_threshold": "0.334000000000000000",
+                "min_initial_deposit_ratio": "0.000000000000000000",
+                "proposal_cancel_ratio": "0.500000000000000000",
+                "proposal_cancel_dest": "",
+                "expedited_voting_period": "43000s",
+                "expedited_threshold": "0.667000000000000000",
+                "expedited_min_deposit": [
+                    {
+                        "denom": "akii",
+                        "amount": "20000000000000000000"
+                    }
+                ],
+                "burn_vote_quorum": false,
+                "burn_proposal_deposit_prevote": false,
+                "burn_vote_veto": true,
+                "min_deposit_ratio": "0.010000000000000000"
+            }
+        },
+        {
+            "@type": "/cosmos.gov.v1.MsgExecLegacyContent",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "content": {
+                "@type": "/cosmos.gov.v1beta1.TextProposal",
+                "title": "Authorize canonical ERC-4337 EntryPoint (and account factory) deployment",
+                "description": "Authorize deploying ERC-4337 EntryPoint v0.7 at the canonical CREATE2 address 0x0000000071727De22E5E9d8BAf0edAc6f37da032, and deploying the associated SimpleAccountFactory for use with that EntryPoint.\n\nThis matches the industry-standard deterministic address used by explorers (e.g. Blockscout) to attach User Operations to transactions. After deployment, bundler/paymaster configs should point at this EntryPoint."
+            }
+        },
+        {
+            "@type": "/ratelimit.v1.MsgAddRateLimit",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "denom": "akii",
+            "channel_or_client_id": "channel-0",
+            "max_percent_send": "10",
+            "max_percent_recv": "10",
+            "duration_hours": 24
+        },
+        {
+            "@type": "/ratelimit.v1.MsgAddRateLimit",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "denom": "akii",
+            "channel_or_client_id": "channel-1",
+            "max_percent_send": "10",
+            "max_percent_recv": "10",
+            "duration_hours": 24
+        },
+        {
+            "@type": "/ratelimit.v1.MsgAddRateLimit",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "denom": "akii",
+            "channel_or_client_id": "channel-2",
+            "max_percent_send": "10",
+            "max_percent_recv": "10",
+            "duration_hours": 24
+        },
+        {
+            "@type": "/ratelimit.v1.MsgAddRateLimit",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "denom": "akii",
+            "channel_or_client_id": "channel-3",
+            "max_percent_send": "10",
+            "max_percent_recv": "10",
+            "duration_hours": 24
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "10000000000000000000akii",
+    "title": "Set 4-day voting, authorize canonical EntryPoint, and rate-limit akii IBC",
+    "summary": "1) Set governance voting_period to 4 days (345600s).\n2) Authorize deploying ERC-4337 EntryPoint v0.7 at the canonical CREATE2 address 0x0000000071727De22E5E9d8BAf0edAc6f37da032 (and the associated account factory) so explorers can index UserOperations.\n3) Add IBC rate limits for native $KII (akii) at 10% send / 10% recv over 24h on transfer channel-0 through channel-3.",
+    "expedited": false
+}
