@@ -37,8 +37,8 @@
             "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
             "denom": "akii",
             "channel_or_client_id": "channel-0",
-            "max_percent_send": "10",
-            "max_percent_recv": "10",
+            "max_percent_send": "0.1",
+            "max_percent_recv": "0.1",
             "duration_hours": 24
         },
         {
@@ -46,8 +46,8 @@
             "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
             "denom": "akii",
             "channel_or_client_id": "channel-1",
-            "max_percent_send": "10",
-            "max_percent_recv": "10",
+            "max_percent_send": "0.1",
+            "max_percent_recv": "0.1",
             "duration_hours": 24
         },
         {
@@ -55,8 +55,8 @@
             "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
             "denom": "akii",
             "channel_or_client_id": "channel-2",
-            "max_percent_send": "10",
-            "max_percent_recv": "10",
+            "max_percent_send": "0.1",
+            "max_percent_recv": "0.1",
             "duration_hours": 24
         },
         {
@@ -64,14 +64,14 @@
             "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
             "denom": "akii",
             "channel_or_client_id": "channel-3",
-            "max_percent_send": "10",
-            "max_percent_recv": "10",
+            "max_percent_send": "0.1",
+            "max_percent_recv": "0.1",
             "duration_hours": 24
         }
     ],
     "metadata": "ipfs://CID",
     "deposit": "10000000000000000000akii",
     "title": "Set 4-day voting and rate-limit akii IBC",
-    "summary": "1) Set governance voting_period to 4 days (345600s).\n2) Add IBC rate limits for native $KII (akii) at 10% send / 10% recv over 24h on transfer channel-0 through channel-3.",
+    "summary": "1) Set governance voting_period to 4 days (345600s).\n2) Add IBC rate limits for native $KII (akii) at 0.1% send / 0.1% recv over 24h on transfer channel-0 through channel-3.",
     "expedited": false
 }
