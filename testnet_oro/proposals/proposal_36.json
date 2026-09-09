@@ -7,7 +7,7 @@
             "channel_or_client_id": "channel-0",
             "max_percent_send": "1",
             "max_percent_recv": "1",
-            "duration_hours": 48
+            "duration_hours": "48"
         },
         {
             "@type": "/ratelimit.v1.MsgAddRateLimit",
@@ -16,7 +16,7 @@
             "channel_or_client_id": "channel-1",
             "max_percent_send": "1",
             "max_percent_recv": "1",
-            "duration_hours": 48
+            "duration_hours": "48"
         },
         {
             "@type": "/ratelimit.v1.MsgAddRateLimit",
@@ -25,7 +25,7 @@
             "channel_or_client_id": "channel-2",
             "max_percent_send": "1",
             "max_percent_recv": "1",
-            "duration_hours": 48
+            "duration_hours": "48"
         },
         {
             "@type": "/ratelimit.v1.MsgAddRateLimit",
@@ -34,7 +34,7 @@
             "channel_or_client_id": "channel-3",
             "max_percent_send": "1",
             "max_percent_recv": "1",
-            "duration_hours": 48
+            "duration_hours": "48"
         }
     ],
     "metadata": "ipfs://CID",
