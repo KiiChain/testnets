@@ -1,38 +1,6 @@
 {
     "messages": [
         {
-            "@type": "/cosmos.gov.v1.MsgUpdateParams",
-            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
-            "params": {
-                "min_deposit": [
-                    {
-                        "denom": "akii",
-                        "amount": "10000000000000000000"
-                    }
-                ],
-                "max_deposit_period": "172800s",
-                "voting_period": "345600s",
-                "quorum": "0.334000000000000000",
-                "threshold": "0.500000000000000000",
-                "veto_threshold": "0.334000000000000000",
-                "min_initial_deposit_ratio": "0.000000000000000000",
-                "proposal_cancel_ratio": "0.500000000000000000",
-                "proposal_cancel_dest": "",
-                "expedited_voting_period": "43000s",
-                "expedited_threshold": "0.667000000000000000",
-                "expedited_min_deposit": [
-                    {
-                        "denom": "akii",
-                        "amount": "20000000000000000000"
-                    }
-                ],
-                "burn_vote_quorum": false,
-                "burn_proposal_deposit_prevote": false,
-                "burn_vote_veto": true,
-                "min_deposit_ratio": "0.010000000000000000"
-            }
-        },
-        {
             "@type": "/ratelimit.v1.MsgAddRateLimit",
             "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
             "denom": "akii",
@@ -71,7 +39,7 @@
     ],
     "metadata": "ipfs://CID",
     "deposit": "10000000000000000000akii",
-    "title": "Set 4-day voting and rate-limit akii IBC",
-    "summary": "1) Set governance voting_period to 4 days (345600s).\n2) Add IBC rate limits for native $KII (akii) at 0.1% send / 0.1% recv over 24h on transfer channel-0 through channel-3.",
+    "title": "Rate-limit akii IBC",
+    "summary": "Add IBC rate limits for native $KII (akii) at 0.1% send / 0.1% recv over 24h on transfer channel-0 through channel-3. Leaves the existing testnet voting period unchanged.",
     "expedited": false
 }
