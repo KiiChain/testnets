@@ -1,0 +1,20 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "plan": {
+                "name": "v7.4.2",
+                "time": "0001-01-01T00:00:00Z",
+                "height": "0",
+                "info": "",
+                "upgraded_client_state": null
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "10000000000000000000akii",
+    "title": "Upgrade Kiichain Testnet Oro to v7.4.2",
+    "summary": "Coordinated upgrade of Kiichain Testnet Oro to v7.4.2.\n\nUpgrade height will be set before proposal submission.\n\nValidators should download the v7.4.2 binary, verify the checksum, and stage it in cosmovisor under the upgrade plan name v7.4.2.\n\nBinaries:\n- linux/amd64: https://kiichain-snapshots-public.s3.us-east-2.amazonaws.com/releases/v7.4.2/kiichaind-v7.4.2-linux-amd64\n  sha256: e99e145379c65b9a1b8dae1a799d9a359a16740c07d0c3684820e6729ab34513\n- linux/arm64: https://kiichain-snapshots-public.s3.us-east-2.amazonaws.com/releases/v7.4.2/kiichaind-v7.4.2-linux-arm64\n  sha256: 22df50464e13a69436213e54069eec26fe6468f2e88d0eb80e877bd883b63d49\n\nThis release updates CosmWasm dependencies and includes a no-op upgrade handler for plan name v7.4.2.",
+    "expedited": false
+}
