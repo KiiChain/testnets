@@ -1,0 +1,20 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.evm.vm.v1.MsgRegisterPreinstalls",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "preinstalls": [
+                {
+                    "name": "Arachnid Deterministic Deployment Proxy",
+                    "address": "0x4e59b44847b379578588920ca78fbf26c0b4956c",
+                    "code": "0x7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe03601600081602082378035828234f58015156039578182fd5b80825250506014600cf3"
+                }
+            ]
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "10000000000000000000akii",
+    "title": "Register Arachnid Deterministic Deployment Proxy",
+    "summary": "Preinstall Arachnid's CREATE2 factory at the canonical address 0x4e59b44847b379578588920ca78fbf26c0b4956c.\n\nThis is the standard deterministic deployment proxy used across EVM networks. Registering it via governance enables CREATE2 deployments at the same addresses as Ethereum (including the canonical ERC-4337 EntryPoint v0.7).\n\nVerified on Plata (devnet) before this testnet proposal.",
+    "expedited": false
+}
