@@ -536,6 +536,21 @@
         "location": "Australia",
         "total_shares": "6000"
       }
+    }    ,
+    {
+      "description": "Kii Dollar Stablecoin by hunterkurfi",
+      "denom_units": [
+        {
+          "denom": "kiiusd",
+          "exponent": 18
+        }
+      ],
+      "base": "kiiusd",
+      "name": "Kii Dollar",
+      "display": "kiiusd",
+      "symbol": "KIIUSD",
+      "address": "0x9002b809094927b54343eA785487484288Baf990"
     }
+
   ]
 }
