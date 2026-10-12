@@ -1,0 +1,20 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "plan": {
+                "name": "v8.0.0",
+                "time": "0001-01-01T00:00:00Z",
+                "height": "36083700",
+                "info": "",
+                "upgraded_client_state": null
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "10000000000000000000akii",
+    "title": "Upgrade Kiichain Testnet Oro to v8.0.0",
+    "summary": "Coordinated upgrade of Kiichain Testnet Oro to v8.0.0.\n\nThe upgrade is scheduled for Tuesday 2026-10-13 around 17:00:00 UTC (block height 36,083,700). Height is estimated from the Oro block time over the 100,000 blocks ending 2026-10-09 17:12 UTC and should be rechecked before this proposal is submitted.\n\nValidators should download the v8.0.0 binary, verify the checksum, and stage it in cosmovisor under the upgrade plan name v8.0.0 before the upgrade height.\n\nThis plan name matches the v8.0.0 upgrade handler, which adds the Cosmos SDK x/circuit store and runs module migrations. The same binary must also include the EVM dependency bump to KiiChain/evm v0.6.2-fork.2 (August 2026 security backports). That bump has no upgrade handler of its own, so it is not a separate software-upgrade plan.\n\nBinaries and checksums are not published yet. Fill them in from the v8.0.0 release before submitting this proposal. Do not submit until the release commit contains both the circuit upgrade and the EVM bump.",
+    "expedited": false
+}
