@@ -34,7 +34,7 @@
         }
     ],
     "metadata": "ipfs://CID",
-    "deposit": "10000000000000000000kii",
+    "deposit": "10000000000000000000akii",
     "title": "Increase deposit amount for upgrades to 20000kii",
     "summary": "Increases the deposit amount for upgrade proposals to 20000kii",
     "expedited": false
