@@ -23,7 +23,7 @@
                 "expedited_min_deposit": [
                     {
                         "denom": "akii",
-                        "amount": "20000000000000000000"
+                        "amount": "20000000000000000000000"
                     }
                 ],
                 "burn_vote_quorum": false,
@@ -35,7 +35,7 @@
     ],
     "metadata": "ipfs://CID",
     "deposit": "10000000000000000000kii",
-    "title": "Change deposit amount for upgrades",
-    "summary": "Increase the deposit amount for upgrade proposals",
+    "title": "Increase deposit amount for upgrades to 20000kii",
+    "summary": "Increases the deposit amount for upgrade proposals to 20000kii",
     "expedited": false
 }
