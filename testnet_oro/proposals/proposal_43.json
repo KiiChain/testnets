@@ -1,0 +1,20 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
+            "authority": "kii10d07y265gmmuvt4z0w9aw880jnsr700jrff0qv",
+            "plan": {
+                "name": "v8.0.3",
+                "time": "0001-01-01T00:00:00Z",
+                "height": "37683218",
+                "info": "",
+                "upgraded_client_state": null
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "20000000000000000000000akii",
+    "title": "Upgrade Kiichain Testnet Oro to v8.0.3",
+    "summary": "Coordinated upgrade of Kiichain Testnet Oro to v8.0.3.\n\nThe upgrade is scheduled for Monday 2026-11-30 around 17:00:00 UTC (block height 37,683,218). Height is estimated from the Oro average block time over the 100,000 blocks ending 2026-11-27 12:02 UTC.\n\nThis release is being created in a disclosed manner due to security fixes from Cosmos EVM private patches, and binaries are available for download on GitHub. It is state-breaking, so all validators must switch binaries at the upgrade height.\n\nValidators should download the v8.0.3 binary, verify the checksum, and stage it in cosmovisor under the upgrade plan name v8.0.3 before the upgrade height.\n\nThis plan name matches the v8.0.3 upgrade handler, which runs module migrations.\n\nBinaries:\n- linux/amd64: https://github.com/KiiChain/kiichain/releases/download/v8.0.3/kiichaind-v8.0.3-linux-amd64\n  sha256: 96208e3ea15705a1eee19e9cdf645bd461fcb730eec61a806563f2cbed865cd3\n- linux/arm64: https://github.com/KiiChain/kiichain/releases/download/v8.0.3/kiichaind-v8.0.3-linux-arm64\n  sha256: 6790a0d34c0c658fb82b4762875b0b0eb28717547f6128f55cca65ba2fd31dd1\n\nChangelog, binaries and release details:\n https://github.com/KiiChain/kiichain/releases/tag/v8.0.3",
+    "expedited": false
+}
